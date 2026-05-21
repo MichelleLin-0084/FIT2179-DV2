@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked bar chart of Australian natural disasters per decade by type, 2000-2026",
+  "width": "container",
+  "height": 340,
+  "data": {
+    "values": [
+      {"decade": "2000s", "disaster_type": "Flood",               "count": 21},
+      {"decade": "2000s", "disaster_type": "Storm",               "count": 26},
+      {"decade": "2000s", "disaster_type": "Wildfire",            "count": 10},
+      {"decade": "2000s", "disaster_type": "Drought",             "count":  2},
+      {"decade": "2000s", "disaster_type": "Extreme temperature", "count":  1},
+      {"decade": "2000s", "disaster_type": "Infestation",         "count":  2},
+      {"decade": "2010s", "disaster_type": "Flood",               "count": 12},
+      {"decade": "2010s", "disaster_type": "Storm",               "count": 13},
+      {"decade": "2010s", "disaster_type": "Wildfire",            "count": 12},
+      {"decade": "2010s", "disaster_type": "Drought",             "count":  1},
+      {"decade": "2010s", "disaster_type": "Extreme temperature", "count":  2},
+      {"decade": "2010s", "disaster_type": "Epidemic",            "count":  1},
+      {"decade": "2020s", "disaster_type": "Flood",               "count": 17},
+      {"decade": "2020s", "disaster_type": "Storm",               "count":  9},
+      {"decade": "2020s", "disaster_type": "Wildfire",            "count":  4}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopLeft": 4,
+        "cornerRadiusTopRight": 4,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "decade",
+          "type": "ordinal",
+          "title": null,
+          "sort": ["2000s", "2010s", "2020s"],
+          "axis": {
+            "labelFontSize": 14,
+            "labelFont": "DM Sans",
+            "labelFontWeight": "500",
+            "labelColor": "#3a3a4a",
+            "domainColor": "#e5e7eb",
+            "tickColor": "#e5e7eb"
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "count",
+          "type": "quantitative",
+          "title": "Number of events",
+          "axis": {
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "titleFontSize": 12,
+            "titleFont": "DM Sans",
+            "titleColor": "#6b7280",
+            "gridColor": "#e5e7eb",
+            "domainColor": "#e5e7eb"
+          }
+        },
+        "color": {
+          "field": "disaster_type",
+          "type": "nominal",
+          "title": "Disaster type",
+          "scale": {
+            "domain": [
+              "Flood",
+              "Storm",
+              "Wildfire",
+              "Drought",
+              "Extreme temperature",
+              "Infestation",
+              "Epidemic"
+            ],
+            "range": [
+              "#0072B2",
+              "#56B4E9",
+              "#E69F00",
+              "#F0E442",
+              "#CC79A7",
+              "#009E73",
+              "#888780"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "right",
+            "labelFontSize": 12,
+            "labelFont": "DM Sans",
+            "symbolSize": 120,
+            "symbolType": "square",
+            "labelColor": "#3a3a4a",
+            "padding": 8
+          }
+        },
+        "tooltip": [
+          {"field": "decade",        "type": "ordinal",      "title": "Decade"},
+          {"field": "disaster_type", "type": "nominal",      "title": "Disaster type"},
+          {"field": "count",         "type": "quantitative", "title": "Events"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [{"op": "sum", "field": "count", "as": "total"}],
+          "groupby": ["decade"]
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": -10,
+        "fontSize": 14,
+        "fontWeight": "600",
+        "font": "DM Sans",
+        "color": "#1a1a2e"
+      },
+      "encoding": {
+        "x": {
+          "field": "decade",
+          "type": "ordinal",
+          "sort": ["2000s", "2010s", "2020s"]
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "total",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"decade": "2020s", "note": "2020–2026 (partial decade)"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dy": 20,
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "font": "DM Sans",
+        "color": "#9ca3af"
+      },
+      "encoding": {
+        "x": {
+          "field": "decade",
+          "type": "ordinal"
+        },
+        "y": {"value": 0},
+        "text": {
+          "field": "note",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "view": {"stroke": null},
+  "background": "transparent",
+  "config": {
+    "font": "DM Sans",
+    "bar": {"cursor": "pointer"}
+  }
+}
