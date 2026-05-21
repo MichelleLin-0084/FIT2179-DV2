@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Australia Under Threat — A Geography of Natural Disasters</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <header class="hero">
+    <div class="hero__noise"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">EM-DAT &amp; GDIS · 2000–2026</p>
+      <h1 class="hero__title">Australia<br>Under Threat</h1>
+      <p class="hero__subtitle">A Geography of Natural Disasters</p>
+      <p class="hero__intro">
+        Australia is one of the most disaster-prone nations on Earth. From the flooding plains
+        of Queensland to the wildfire corridors of Victoria, natural hazards reshape communities
+        every year. This visualisation maps where disasters strike, what they cost, and who bears
+        the burden — told through data spanning more than two decades.
+      </p>
+      <div class="hero__legend">
+        <span class="legend-pill" data-type="flood">Flood</span>
+        <span class="legend-pill" data-type="storm">Storm</span>
+        <span class="legend-pill" data-type="wildfire">Wildfire</span>
+        <span class="legend-pill" data-type="drought">Drought</span>
+        <span class="legend-pill" data-type="heat">Extreme temp</span>
+        <span class="legend-pill" data-type="other">Other</span>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="stat-card">
+        <span class="stat-card__number">133</span>
+        <span class="stat-card__label">Recorded disasters</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__number">481</span>
+        <span class="stat-card__label">Geocoded locations</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__number">26+</span>
+        <span class="stat-card__label">Years of data</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__number">6</span>
+        <span class="stat-card__label">Disaster types</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 1 — THE BIG PICTURE
+  ═══════════════════════════════════════════════ -->
+  <section class="section section--light" id="big-picture">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__tag">01 — Overview</span>
+        <h2 class="section__title">The scale of the problem</h2>
+        <p class="section__body">
+          Since 2000, Australia has recorded over 130 natural disaster events significant enough
+          to appear in the global EM-DAT database. Floods and storms dominate in frequency,
+          but wildfires have caused some of the most devastating single events.
+        </p>
+      </div>
+
+      <div class="chart-grid chart-grid--2col">
+        <div class="chart-block">
+          <h3 class="chart-title">Disasters by type</h3>
+          <p class="chart-desc">Total recorded events 2000–2026, broken down by disaster category.</p>
+          <div id="chart-donut" class="chart-container"></div>
+        </div>
+        <div class="chart-block">
+          <h3 class="chart-title">Events per year</h3>
+          <p class="chart-desc">How often do disasters occur? Annual counts show a clear upward trend from 2010 onward.</p>
+          <div id="chart-bar-year" class="chart-container"></div>
+        </div>
+      </div>
+
+      <div class="chart-grid chart-grid--1col">
+        <div class="chart-block">
+          <h3 class="chart-title">Disasters per decade by type</h3>
+          <p class="chart-desc">Stacked view across decades reveals how the disaster mix has shifted over time.</p>
+          <div id="chart-stacked-decade" class="chart-container chart-container--tall"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 2 — WHERE DISASTERS STRIKE
+  ═══════════════════════════════════════════════ -->
+  <section class="section section--dark" id="geography">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__tag">02 — Geography</span>
+        <h2 class="section__title">Where disasters strike</h2>
+        <p class="section__body">
+          No part of Australia is immune. The north is battered by cyclones and floods,
+          the south-east by heat and fire, and the interior by drought. The maps below
+          reveal the spatial fingerprint of each disaster type across the continent.
+        </p>
+      </div>
+
+      <div class="chart-grid chart-grid--1col">
+        <div class="chart-block chart-block--dark">
+          <h3 class="chart-title chart-title--light">Disaster events by state</h3>
+          <p class="chart-desc chart-desc--light">Choropleth map showing total disaster events recorded per state and territory.</p>
+          <div id="chart-choropleth" class="chart-container chart-container--map"></div>
+        </div>
+      </div>
+
+      <div class="chart-grid chart-grid--1col">
+        <div class="chart-block chart-block--dark">
+          <h3 class="chart-title chart-title--light">Geocoded disaster locations (1968–2018)</h3>
+          <p class="chart-desc chart-desc--light">Each dot marks a location affected by a recorded disaster. Colour indicates disaster type. Use the filter below to explore by category.</p>
+          <div id="chart-point-map" class="chart-container chart-container--map"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 3 — DISASTER TYPES IN DEPTH
+  ═══════════════════════════════════════════════ -->
+  <section class="section section--light" id="depth">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__tag">03 — Patterns</span>
+        <h2 class="section__title">Seasonal rhythms &amp; long-term trends</h2>
+        <p class="section__body">
+          Natural disasters are not random — they follow Australia's seasons. Cyclones track
+          the wet season in the north, while bushfires peak in the southern summer.
+          Understanding these patterns is critical for preparedness.
+        </p>
+      </div>
+
+      <div class="chart-grid chart-grid--1col">
+        <div class="chart-block">
+          <h3 class="chart-title">Disaster frequency by month and type</h3>
+          <p class="chart-desc">A heatmap revealing the seasonal concentration of each disaster type. Darker cells = more events in that month.</p>
+          <div id="chart-heatmap" class="chart-container chart-container--tall"></div>
+        </div>
+      </div>
+
+      <div class="chart-grid chart-grid--2col">
+        <div class="chart-block">
+          <h3 class="chart-title">Fatalities over time</h3>
+          <p class="chart-desc">Total deaths per year by disaster type. The 2009 heatwave and Black Saturday fires stand out clearly.</p>
+          <div id="chart-fatalities" class="chart-container"></div>
+        </div>
+        <div class="chart-block">
+          <h3 class="chart-title">People affected per event</h3>
+          <p class="chart-desc">Strip plot of individual events — each dot is one disaster. Outlier events are immediately visible.</p>
+          <div id="chart-strip" class="chart-container"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 4 — THE HUMAN COST
+  ═══════════════════════════════════════════════ -->
+  <section class="section section--dark" id="cost">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__tag">04 — Human cost</span>
+        <h2 class="section__title">The toll on people &amp; economy</h2>
+        <p class="section__body">
+          Behind every data point is a community impacted. The economic damage from Australia's
+          natural disasters runs into the billions — but the human cost cannot be measured in
+          dollars alone.
+        </p>
+      </div>
+
+      <div class="chart-grid chart-grid--1col">
+        <div class="chart-block chart-block--dark">
+          <h3 class="chart-title chart-title--light">Economic damage by disaster type (inflation-adjusted)</h3>
+          <p class="chart-desc chart-desc--light">Total damage in thousands of USD, adjusted for inflation. Missing values reflect unreported damage figures in EM-DAT.</p>
+          <div id="chart-damage" class="chart-container chart-container--tall"></div>
+        </div>
+      </div>
+
+      <div class="chart-grid chart-grid--2col">
+        <div class="chart-block chart-block--dark">
+          <h3 class="chart-title chart-title--light">State rankings by total damage</h3>
+          <p class="chart-desc chart-desc--light">Which states bear the greatest economic burden from natural disasters?</p>
+          <div id="chart-rank" class="chart-container"></div>
+        </div>
+        <div class="chart-block chart-block--dark">
+          <h3 class="chart-title chart-title--light">Deadliest single events</h3>
+          <p class="chart-desc chart-desc--light">The ten disasters with the highest recorded death tolls since 2000.</p>
+          <div id="chart-deadliest" class="chart-container"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <p class="footer__heading">Data sources</p>
+        <p class="footer__text">
+          <a href="https://www.emdat.be" target="_blank">EM-DAT</a> — The International Disaster Database,
+          CRED/UCLouvain, Brussels, Belgium. Custom request, accessed May 2026.<br><br>
+          <a href="https://www.earthdata.nasa.gov" target="_blank">GDIS</a> — Geocoded Disasters Dataset v1.0,
+          Rosvold &amp; Buhaug (2021), NASA Earthdata / SEDAC.
+        </p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">About</p>
+        <p class="footer__text">
+          Created for FIT2179 Data Visualisation 2, Monash University, Semester 1 2026.<br><br>
+          Designed for the average Australian reader. AI tools were used to assist with
+          grammar checking and code review. All visualisations and analysis are the author's own work.
+        </p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Author</p>
+        <p class="footer__text">
+          <!-- Replace with your name -->
+          Student Name<br>
+          Monash University<br>
+          May 2026
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 · Built with <a href="https://vega.github.io/vega-lite/" target="_blank">Vega-Lite</a></p>
+    </div>
+  </footer>
+
+  <script src="js/charts.js"></script>
+</body>
+</html>
