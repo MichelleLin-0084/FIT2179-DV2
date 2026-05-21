@@ -1,0 +1,482 @@
+id,country,iso3,gwno,year,geo_id,geolocation,level,adm1,adm2,adm3,location,historical,hist_country,disastertype,disasterno,latitude,longitude
+268,Australia,AUS,900,1968,1266,Perth,2,Western Australia,Perth,NA,Perth,0,NA,earthquake,1968-0077,-31.95564407,115.8554552
+290,Australia,AUS,900,1994,965,Albany,2,Western Australia,Albany,NA,Albany,0,NA,storm,1994-0127,-34.74150717,118.1809278
+290,Australia,AUS,900,1994,1089,Geraldton,2,Western Australia,Geraldton,NA,Geraldton,0,NA,storm,1994-0127,-28.6998535,114.3278341
+290,Australia,AUS,900,1994,1125,Katanning,2,Western Australia,Katanning,NA,Katanning,0,NA,storm,1994-0127,-33.64900784,117.6830451
+290,Australia,AUS,900,1994,1201,Narrogin (Shire),2,Western Australia,Narrogin (Shire),NA,Narrogin,0,NA,storm,1994-0127,-32.99623466,117.2602922
+308,Australia,AUS,900,2000,1035,Cairns,2,Queensland,Cairns,NA,Cairns,0,NA,storm,2000-0097,-16.91620789,145.7682661
+308,Australia,AUS,900,2000,1159,Mareeba,2,Queensland,Mareeba,NA,Marreba,0,NA,storm,2000-0097,-16.98475743,143.9546139
+310,Australia,AUS,900,2000,997,Berrigan,2,New South Wales,Berrigan,NA,Berrigan,0,NA,flood,2000-0750,-35.73563448,145.7099005
+310,Australia,AUS,900,2000,1052,Corowa,2,New South Wales,Corowa,NA,Corowa,0,NA,flood,2000-0750,-35.82723003,146.2645363
+310,Australia,AUS,900,2000,1063,Deniliquin,2,New South Wales,Deniliquin,NA,Deniliquin,0,NA,flood,2000-0750,-35.53375988,144.9724453
+310,Australia,AUS,900,2000,1106,Gwydir,2,New South Wales,Gwydir,NA,Bingara,0,NA,flood,2000-0750,-29.60595945,150.5120822
+310,Australia,AUS,900,2000,1184,Murray,2,New South Wales,Murray,NA,Murray,0,NA,flood,2000-0750,-35.73274565,144.7429565
+310,Australia,AUS,900,2000,1378,Warrumbungle,2,New South Wales,Warrumbungle,NA,Coonebarabran,0,NA,flood,2000-0750,-31.46260325,149.4062674
+313,Australia,AUS,900,2001,1137,Ku-Ring-Gai,2,New South Wales,Ku-Ring-Gai,NA,Kuringai,0,NA,storm,2001-0045,-33.73685552,151.1504889
+313,Australia,AUS,900,2001,1139,Kyogle,2,New South Wales,Kyogle,NA,Kyogle,0,NA,storm,2001-0045,-28.61937447,152.7748359
+313,Australia,AUS,900,2001,1379,Waverley,2,New South Wales,Waverley,NA,Bondi,0,NA,storm,2001-0045,-33.8905483,151.2671628
+315,Australia,AUS,900,2001,1057,Katherine,2,Northern Territory,Katherine,NA,Daguragu,0,NA,flood,2001-0103,-17.4220729,130.8040844
+316,Australia,AUS,900,2001,973,Ballina,2,New South Wales,Ballina,NA,Ballina,0,NA,flood,2001-0130,-28.85255366,153.4882203
+316,Australia,AUS,900,2001,1027,Byron,2,New South Wales,Byron,NA,Mullumbimby,0,NA,flood,2001-0130,-28.60398807,153.4847717
+316,Australia,AUS,900,2001,1128,Kempsey,2,New South Wales,Kempsey,NA,Kempsey,0,NA,flood,2001-0130,-30.95237783,152.6447299
+316,Australia,AUS,900,2001,1140,Kyogle,2,New South Wales,Kyogle,NA,Kyogle,0,NA,flood,2001-0130,-28.61937447,152.7748359
+318,Australia,AUS,900,2002,1080,Fairfield,2,New South Wales,Fairfield,NA,Fairfield,0,NA,storm,2002-0157,-27.50671185,153.0231587
+318,Australia,AUS,900,2002,1114,Holroyd,2,New South Wales,Holroyd,NA,Holroyd,0,NA,storm,2002-0157,-33.82752189,150.9568861
+320,Australia,AUS,900,2002,1097,Greater Taree,2,New South Wales,Greater Taree,NA,Taree,0,NA,storm,2002-0798,-31.7931208,152.2818601
+320,Australia,AUS,900,2002,1269,Port Stephens,2,New South Wales,Port Stephens,NA,Port Stephens,0,NA,storm,2002-0798,-32.72421691,151.8420307
+322,Australia,AUS,900,2003,982,Banana,2,Queensland,Banana,NA,Wowan,0,NA,flood,2003-0079,-24.51804332,150.2442679
+322,Australia,AUS,900,2003,1320,Rockhampton,2,Queensland,Rockhampton,NA,Gracemere,0,NA,flood,2003-0079,-23.35095644,150.5251617
+323,Australia,AUS,900,2003,1107,Gwydir,2,New South Wales,Gwydir,NA,Bingara,0,NA,flood,2003-0109,-29.60595945,150.5120822
+323,Australia,AUS,900,2003,1129,Kempsey,2,New South Wales,Kempsey,NA,Kempsey,0,NA,flood,2003-0109,-30.95237783,152.6447299
+323,Australia,AUS,900,2003,1173,Moree Plains,2,New South Wales,Moree Plains,NA,Moree Plains,0,NA,flood,2003-0109,-29.25360575,149.6278206
+323,Australia,AUS,900,2003,1194,Narrabri,2,New South Wales,Narrabri,NA,Narrabri,0,NA,flood,2003-0109,-30.35602055,149.5645647
+323,Australia,AUS,900,2003,1346,Uralla,2,New South Wales,Uralla,NA,Uralla,0,NA,flood,2003-0109,-30.50674529,151.3115911
+330,Australia,AUS,900,2004,986,Barcoo,2,Queensland,Barcoo,NA,Jundah,0,NA,flood,2004-0091,-25.13301337,142.2668015
+330,Australia,AUS,900,2004,1066,Diamantina,2,Queensland,Diamantina,NA,Birdsville,0,NA,flood,2004-0091,-24.63148113,139.7308791
+330,Australia,AUS,900,2004,1083,Flinders,2,Queensland,Flinders,NA,Flinders,0,NA,flood,2004-0091,-20.97778701,144.3282942
+330,Australia,AUS,900,2004,1152,Longreach,2,Queensland,Longreach,NA,Longreach,0,NA,flood,2004-0091,-23.34831419,143.7022756
+330,Australia,AUS,900,2004,1174,Moree Plains,2,New South Wales,Moree Plains,NA,Moree Plains,0,NA,flood,2004-0091,-29.25360575,149.6278206
+330,Australia,AUS,900,2004,1180,Mount Isa,2,Queensland,Mount Isa,NA,Mount Isa,0,NA,flood,2004-0091,-19.96621384,138.7823077
+330,Australia,AUS,900,2004,1263,Paroo,2,Queensland,Paroo,NA,Eulo,0,NA,flood,2004-0091,-28.07359067,145.7709629
+330,Australia,AUS,900,2004,1321,Rockhampton,2,Queensland,Rockhampton,NA,Rockhampton,0,NA,flood,2004-0091,-23.35095644,150.5251617
+335,Australia,AUS,900,2004,1028,Byron,2,New South Wales,Byron,NA,Mullumbimby,0,NA,flood,2004-0662,-28.60398807,153.4847717
+335,Australia,AUS,900,2004,1175,Moree Plains,2,New South Wales,Moree Plains,NA,Moree,0,NA,flood,2004-0662,-29.25360575,149.6278206
+335,Australia,AUS,900,2004,1195,Narrabri,2,New South Wales,Narrabri,NA,Wee Waa,0,NA,flood,2004-0662,-30.35602055,149.5645647
+335,Australia,AUS,900,2004,1257,Orange,2,New South Wales,Orange,NA,Orange,0,NA,flood,2004-0662,-33.32565598,149.1195168
+335,Australia,AUS,900,2004,1376,Warringah,2,New South Wales,Warringah,NA,Northern New South Wales,0,NA,flood,2004-0662,-33.7106787,151.2313438
+336,Australia,AUS,900,2005,1101,Griffith,2,New South Wales,Griffith,NA,Griffith,0,NA,storm,2005-0068,-35.32713272,149.1366044
+336,Australia,AUS,900,2005,1196,Narrabri,2,New South Wales,Narrabri,NA,Narrabri,0,NA,storm,2005-0068,-30.35602055,149.5645647
+337,Australia,AUS,900,2005,974,Ballina,2,New South Wales,Ballina,NA,Ballina,0,NA,flood,2005-0523,-28.85255366,153.4882203
+337,Australia,AUS,900,2005,1029,Byron,2,New South Wales,Byron,NA,Byron Bay,0,NA,flood,2005-0523,-28.60398807,153.4847717
+337,Australia,AUS,900,2005,1141,Kyogle,2,New South Wales,Kyogle,NA,Kyogle  New South Wales,0,NA,flood,2005-0523,-28.61937447,152.7748359
+341,Australia,AUS,900,2006,1073,East Pilbara,2,Western Australia,East Pilbara,NA,Pilbara coast,0,NA,storm,2006-0155,-21.75983249,123.4944501
+341,Australia,AUS,900,2006,1079,Exmouth,2,Western Australia,Exmouth,NA,Exmouth,0,NA,storm,2006-0155,-22.50639411,114.1987766
+344,Australia,AUS,900,2007,1042,Cessnock,2,New South Wales,Cessnock,NA,Cessnock,0,NA,flood,2007-0160,-32.92480474,151.2247887
+344,Australia,AUS,900,2007,1069,Dungog,2,New South Wales,Dungog,NA,Dungog,0,NA,flood,2007-0160,-32.34888305,151.6074315
+344,Australia,AUS,900,2007,1155,Maitland,2,New South Wales,Maitland,NA,Maitland,0,NA,flood,2007-0160,-32.71002063,151.5484004
+344,Australia,AUS,900,2007,1270,Port Stephens,2,New South Wales,Port Stephens,NA,Port Stephens,0,NA,flood,2007-0160,-32.72421691,151.8420307
+345,Australia,AUS,900,2008,975,Ballina,2,New South Wales,Ballina,NA,Ballina,0,NA,flood,2008-0014,-28.85255366,153.4882203
+345,Australia,AUS,900,2008,991,Bellingen,2,New South Wales,Bellingen,NA,Bellingen,0,NA,flood,2008-0014,-30.40336806,152.7286564
+345,Australia,AUS,900,2008,1130,Kempsey,2,New South Wales,Kempsey,NA,Yarrahappini,0,NA,flood,2008-0014,-30.95237783,152.6447299
+345,Australia,AUS,900,2008,1142,Kyogle,2,New South Wales,Kyogle,NA,Kyogle,0,NA,flood,2008-0014,-28.61937447,152.7748359
+345,Australia,AUS,900,2008,1339,Tenterfield,2,New South Wales,Tenterfield,NA,Tenterfield,0,NA,flood,2008-0014,-28.944678,152.0862682
+346,Australia,AUS,900,2008,987,Barcoo,2,Queensland,Barcoo,NA,Barcoo Shire,0,NA,flood,2008-0017,-25.13301337,142.2668015
+346,Australia,AUS,900,2008,996,Isaac,2,Queensland,Isaac,NA,Belyando,0,NA,flood,2008-0017,-22.29453534,147.1202884
+346,Australia,AUS,900,2008,998,Blackall Tambo,2,Queensland,Blackall Tambo,NA,Blackall,0,NA,flood,2008-0017,-24.5867769,145.4026994
+346,Australia,AUS,900,2008,1016,Bulloo,2,Queensland,Bulloo,NA,Thargomindah,0,NA,flood,2008-0017,-28.0215498,142.593456
+346,Australia,AUS,900,2008,1044,Charters Towers,2,Queensland,Charters Towers,NA,Charters Towers,0,NA,flood,2008-0017,-20.0669695,146.2666978
+346,Australia,AUS,900,2008,1074,Central Highlands,2,Queensland,Central Highlands,NA,Emerald,0,NA,flood,2008-0017,-23.79846468,147.7817685
+346,Australia,AUS,900,2008,1076,Etheridge,2,Queensland,Etheridge,NA,Etheridge,0,NA,flood,2008-0017,-18.5056745,143.6610231
+346,Australia,AUS,900,2008,1153,Longreach,2,Queensland,Longreach,NA,Longreach,0,NA,flood,2008-0017,-23.34831419,143.7022756
+346,Australia,AUS,900,2008,1185,Murweh,2,Queensland,Murweh,NA,Charleville,0,NA,flood,2008-0017,-26.18969525,146.4890925
+346,Australia,AUS,900,2008,1264,Paroo,2,Queensland,Paroo,NA,Cunnamulla,0,NA,flood,2008-0017,-28.07359067,145.7709629
+346,Australia,AUS,900,2008,1314,Quilpie,2,Queensland,Quilpie,NA,Quilpie,0,NA,flood,2008-0017,-26.34684619,143.8962026
+346,Australia,AUS,900,2008,1391,Winton,2,Queensland,Winton,NA,Winton,0,NA,flood,2008-0017,-22.5402121,142.4236645
+347,Australia,AUS,900,2008,970,Tablelands,2,Queensland,Tablelands,NA,Atherton,0,NA,flood,2008-0098,-17.23936495,145.5225348
+347,Australia,AUS,900,2008,1018,Bundaberg,2,Queensland,Bundaberg,NA,Bundaberg,0,NA,flood,2008-0098,-24.87893574,152.3443795
+347,Australia,AUS,900,2008,1036,Cairns,2,Queensland,Cairns,NA,Cairns,0,NA,flood,2008-0098,-16.91620789,145.7682661
+347,Australia,AUS,900,2008,1322,Rockhampton,2,Queensland,Rockhampton,NA,Gogango,0,NA,flood,2008-0098,-23.35095644,150.5251617
+347,Australia,AUS,900,2008,1336,Tableland,2,Queensland,Tableland,NA,Tableland,0,NA,flood,2008-0098,-18.52317318,134.9755902
+350,Australia,AUS,900,2009,988,Barcoo,2,Queensland,Barcoo,NA,Barcoo,0,NA,flood,2009-0615,-25.13301337,142.2668015
+350,Australia,AUS,900,2009,999,Blackall Tambo,2,Queensland,Blackall Tambo,NA,Blackall,0,NA,flood,2009-0615,-24.5867769,145.4026994
+350,Australia,AUS,900,2009,1008,Boulia,2,Queensland,Boulia,NA,Boulia,0,NA,flood,2009-0615,-22.48193292,139.2448772
+350,Australia,AUS,900,2009,1012,Whitsunday,2,Queensland,Whitsunday,NA,Bowen,0,NA,flood,2009-0615,-20.7394554,147.6194451
+350,Australia,AUS,900,2009,1017,Bulloo,2,Queensland,Bulloo,NA,Bulloo,0,NA,flood,2009-0615,-28.0215498,142.593456
+350,Australia,AUS,900,2009,1037,Cairns,2,Queensland,Cairns,NA,Cairns,0,NA,flood,2009-0615,-16.91620789,145.7682661
+350,Australia,AUS,900,2009,1047,Cloncurry,2,Queensland,Cloncurry,NA,Cloncurry,0,NA,flood,2009-0615,-20.81714878,140.2641678
+350,Australia,AUS,900,2009,1067,Diamantina,2,Queensland,Diamantina,NA,Diamantina river,0,NA,flood,2009-0615,-24.63148113,139.7308791
+350,Australia,AUS,900,2009,1113,Hinchinbrook,2,Queensland,Hinchinbrook,NA,Hinchinbrook,0,NA,flood,2009-0615,-18.66291941,146.0454197
+350,Australia,AUS,900,2009,1163,Mckinlay,2,Queensland,Mckinlay,NA,McKinlay,0,NA,flood,2009-0615,-20.53510514,141.5870669
+350,Australia,AUS,900,2009,1181,Mount Isa,2,Queensland,Mount Isa,NA,Mount Isa,0,NA,flood,2009-0615,-19.96621384,138.7823077
+350,Australia,AUS,900,2009,1315,Quilpie,2,Queensland,Quilpie,NA,Quilpie,0,NA,flood,2009-0615,-26.34684619,143.8962026
+350,Australia,AUS,900,2009,1392,Winton,2,Queensland,Winton,NA,Winton,0,NA,flood,2009-0615,-22.5402121,142.4236645
+353,Australia,AUS,900,2009,969,Ashfield,2,New South Wales,Ashfield,NA,Ashfield,0,NA,flood,2009-0589,-33.88560583,151.1287198
+353,Australia,AUS,900,2009,971,Auburn,2,New South Wales,Auburn,NA,Auburn,0,NA,flood,2009-0589,-33.85138939,151.04685
+353,Australia,AUS,900,2009,976,Ballina,2,New South Wales,Ballina,NA,Ballina,0,NA,flood,2009-0589,-28.85255366,153.4882203
+353,Australia,AUS,900,2009,992,Bellingen,2,New South Wales,Bellingen,NA,Bellingen,0,NA,flood,2009-0589,-30.40336806,152.7286564
+353,Australia,AUS,900,2009,1000,Bland,2,New South Wales,Bland,NA,Bland,0,NA,flood,2009-0589,-33.89412807,146.9602323
+353,Australia,AUS,900,2009,1002,Blayney,2,New South Wales,Blayney,NA,Blayney,0,NA,flood,2009-0589,-33.59470609,149.1436417
+353,Australia,AUS,900,2009,1004,Blue Mountains,2,New South Wales,Blue Mountains,NA,Blue Mountains,0,NA,flood,2009-0589,-33.69859653,150.4105599
+353,Australia,AUS,900,2009,1007,Botany Bay,2,New South Wales,Botany Bay,NA,Botany Bay,0,NA,flood,2009-0589,-33.94131326,151.2008441
+353,Australia,AUS,900,2009,1026,Burwood,2,New South Wales,Burwood,NA,Burwood,0,NA,flood,2009-0589,-33.88601415,151.1016619
+353,Australia,AUS,900,2009,1030,Byron,2,New South Wales,Byron,NA,Byron,0,NA,flood,2009-0589,-28.60398807,153.4847717
+353,Australia,AUS,900,2009,1033,Cabonne,2,New South Wales,Cabonne,NA,Cabonne,0,NA,flood,2009-0589,-33.15326022,148.753561
+353,Australia,AUS,900,2009,1038,Camden,2,New South Wales,Camden,NA,Camden,0,NA,flood,2009-0589,-34.00835709,150.7250065
+353,Australia,AUS,900,2009,1039,Canterbury,2,New South Wales,Canterbury,NA,Canterbury,0,NA,flood,2009-0589,-33.92446414,151.0959222
+353,Australia,AUS,900,2009,1043,Cessnock,2,New South Wales,Cessnock,NA,Cessnock,0,NA,flood,2009-0589,-32.92480474,151.2247887
+353,Australia,AUS,900,2009,1050,Coonamble,2,New South Wales,Coonamble,NA,Coonamble,0,NA,flood,2009-0589,-30.87159393,148.2920392
+353,Australia,AUS,900,2009,1053,Cowra,2,New South Wales,Cowra,NA,Cowra,0,NA,flood,2009-0589,-33.79742442,148.7178856
+353,Australia,AUS,900,2009,1070,Dungog,2,New South Wales,Dungog,NA,Dungog,0,NA,flood,2009-0589,-32.34888305,151.6074315
+353,Australia,AUS,900,2009,1082,Fairfield,2,New South Wales,Fairfield,NA,Fairfield,0,NA,flood,2009-0589,-27.50671185,153.0231587
+353,Australia,AUS,900,2009,1085,Forbes,2,New South Wales,Forbes,NA,Forbes,0,NA,flood,2009-0589,-33.42225078,147.8663771
+353,Australia,AUS,900,2009,1094,Glen Innes Severn,2,New South Wales,Glen Innes Severn,NA,Glen Innes,0,NA,flood,2009-0589,-29.64647399,151.903039
+353,Australia,AUS,900,2009,1095,Gloucester,2,New South Wales,Gloucester,NA,Gloucester,0,NA,flood,2009-0589,-31.90550997,151.7944345
+353,Australia,AUS,900,2009,1098,Greater Taree,2,New South Wales,Greater Taree,NA,Greater Taree,0,NA,flood,2009-0589,-31.7931208,152.2818601
+353,Australia,AUS,900,2009,1103,Gunnedah,2,New South Wales,Gunnedah,NA,Gunnedah,0,NA,flood,2009-0589,-31.0458593,150.1887479
+353,Australia,AUS,900,2009,1105,Guyra,2,New South Wales,Guyra,NA,Guyra,0,NA,flood,2009-0589,-30.13361684,151.7054274
+353,Australia,AUS,900,2009,1108,Gwydir,2,New South Wales,Gwydir,NA,Bingara,0,NA,flood,2009-0589,-29.60595945,150.5120822
+353,Australia,AUS,900,2009,1112,Hawkesbury,2,New South Wales,Hawkesbury,NA,Hawkesbury,0,NA,flood,2009-0589,-33.33548886,150.7731618
+353,Australia,AUS,900,2009,1115,Holroyd,2,New South Wales,Holroyd,NA,Holroyd,0,NA,flood,2009-0589,-33.82752189,150.9568861
+353,Australia,AUS,900,2009,1118,Hunters Hill,2,New South Wales,Hunters Hill,NA,Hunter's Hill,0,NA,flood,2009-0589,-33.83390989,151.1474362
+353,Australia,AUS,900,2009,1119,Hurstville,2,New South Wales,Hurstville,NA,Hurstville,0,NA,flood,2009-0589,-33.96318648,151.0703547
+353,Australia,AUS,900,2009,1131,Kempsey,2,New South Wales,Kempsey,NA,Kempsey,0,NA,flood,2009-0589,-30.95237783,152.6447299
+353,Australia,AUS,900,2009,1135,Kogarah,2,New South Wales,Kogarah,NA,Kogarah,0,NA,flood,2009-0589,-33.97956464,151.1092083
+353,Australia,AUS,900,2009,1136,Ku-ring-gai,2,New South Wales,Ku-ring-gai,NA,Ku-ring-gai,0,NA,flood,2009-0589,-33.73685552,151.1504889
+353,Australia,AUS,900,2009,1138,Ku-Ring-Gai,2,New South Wales,Ku-Ring-Gai,NA,Turramurra,0,NA,flood,2009-0589,-33.73685552,151.1504889
+353,Australia,AUS,900,2009,1143,Kyogle,2,New South Wales,Kyogle,NA,Kyogle,0,NA,flood,2009-0589,-28.61937447,152.7748359
+353,Australia,AUS,900,2009,1146,Lachlan,2,New South Wales,Lachlan,NA,Lachlan,0,NA,flood,2009-0589,-32.91940184,146.9907302
+353,Australia,AUS,900,2009,1148,Lane Cove,2,New South Wales,Lane Cove,NA,Lane Cove,0,NA,flood,2009-0589,-33.82168296,151.1686002
+353,Australia,AUS,900,2009,1149,Leichhardt,2,New South Wales,Leichhardt,NA,Leichhardt,0,NA,flood,2009-0589,-33.86874676,151.1710933
+353,Australia,AUS,900,2009,1156,Maitland,2,New South Wales,Maitland,NA,Maitland,0,NA,flood,2009-0589,-32.71002063,151.5484004
+353,Australia,AUS,900,2009,1158,Manly,2,New South Wales,Manly,NA,Manly,0,NA,flood,2009-0589,-33.80010047,151.2700257
+353,Australia,AUS,900,2009,1161,Marrickville,2,New South Wales,Marrickville,NA,Marrickville,0,NA,flood,2009-0589,-33.90774339,151.1593898
+353,Australia,AUS,900,2009,1176,Moree Plains,2,New South Wales,Moree Plains,NA,Moree Plains,0,NA,flood,2009-0589,-29.25360575,149.6278206
+353,Australia,AUS,900,2009,1179,Mosman,2,New South Wales,Mosman,NA,Mosman,0,NA,flood,2009-0589,-33.82826007,151.2464923
+353,Australia,AUS,900,2009,1189,Muswellbrook,2,New South Wales,Muswellbrook,NA,Muswellbrook,0,NA,flood,2009-0589,-32.44161395,150.6288189
+353,Australia,AUS,900,2009,1197,Narrabri,2,New South Wales,Narrabri,NA,Narrabri,0,NA,flood,2009-0589,-30.35602055,149.5645647
+353,Australia,AUS,900,2009,1249,North Sydney,2,New South Wales,North Sydney,NA,North Sydney,0,NA,flood,2009-0589,-33.83256564,151.2105782
+353,Australia,AUS,900,2009,1255,Oberon,2,New South Wales,Oberon,NA,Oberon,0,NA,flood,2009-0589,-33.88296943,149.8107851
+353,Australia,AUS,900,2009,1258,Orange,2,New South Wales,Orange,NA,Orange,0,NA,flood,2009-0589,-33.32565598,149.1195168
+353,Australia,AUS,900,2009,1260,Parkes,2,New South Wales,Parkes,NA,Parkes,0,NA,flood,2009-0589,-35.29992077,149.1312189
+353,Australia,AUS,900,2009,1268,Pittwater,2,New South Wales,Pittwater,NA,Pittwater,0,NA,flood,2009-0589,-33.64180736,151.2822893
+353,Australia,AUS,900,2009,1271,Port Stephens,2,New South Wales,Port Stephens,NA,Port Stephens,0,NA,flood,2009-0589,-32.72421691,151.8420307
+353,Australia,AUS,900,2009,1316,Randwick,2,New South Wales,Randwick,NA,Randwick,0,NA,flood,2009-0589,-33.94168638,151.23971
+353,Australia,AUS,900,2009,1319,Rockdale,2,New South Wales,Rockdale,NA,Rockdale,0,NA,flood,2009-0589,-33.95450682,151.1408119
+353,Australia,AUS,900,2009,1332,Ryde,2,New South Wales,Ryde,NA,Ryde,0,NA,flood,2009-0589,-33.80157562,151.1074454
+353,Australia,AUS,900,2009,1335,Strathfield,2,New South Wales,Strathfield,NA,Strathfield,0,NA,flood,2009-0589,-33.88091484,151.073158
+353,Australia,AUS,900,2009,1340,Tenterfield,2,New South Wales,Tenterfield,NA,Tenterfield,0,NA,flood,2009-0589,-28.944678,152.0862682
+353,Australia,AUS,900,2009,1344,Upper Hunter,2,New South Wales,Upper Hunter,NA,Scone,0,NA,flood,2009-0589,-31.96993583,150.7261094
+353,Australia,AUS,900,2009,1347,Uralla,2,New South Wales,Uralla,NA,Uralla,0,NA,flood,2009-0589,-30.50674529,151.3115911
+353,Australia,AUS,900,2009,1371,Walcha,2,New South Wales,Walcha,NA,Walcha,0,NA,flood,2009-0589,-31.16348621,151.7846297
+353,Australia,AUS,900,2009,1377,Warringah,2,New South Wales,Warringah,NA,Warringah,0,NA,flood,2009-0589,-33.7106787,151.2313438
+353,Australia,AUS,900,2009,1380,Waverley,2,New South Wales,Waverley,NA,Waverley,0,NA,flood,2009-0589,-33.8905483,151.2671628
+353,Australia,AUS,900,2009,1381,Weddin,2,New South Wales,Weddin,NA,Weddin,0,NA,flood,2009-0589,-33.87201993,148.0107105
+353,Australia,AUS,900,2009,1390,Willoughby,2,New South Wales,Willoughby,NA,Willoughby,0,NA,flood,2009-0589,-33.80093182,151.1982086
+353,Australia,AUS,900,2009,1394,Wollondilly,2,New South Wales,Wollondilly,NA,Wollondilly,0,NA,flood,2009-0589,-34.10289124,150.4438986
+353,Australia,AUS,900,2009,1395,Woollahra,2,New South Wales,Woollahra,NA,Woollahra,0,NA,flood,2009-0589,-33.87165587,151.256909
+354,Australia,AUS,900,2010,1001,Bland,2,New South Wales,Bland,NA,Bland,0,NA,flood,2010-0066,-33.89412807,146.9602323
+354,Australia,AUS,900,2010,1003,Blayney,2,New South Wales,Blayney,NA,Blayney,0,NA,flood,2010-0066,-33.59470609,149.1436417
+354,Australia,AUS,900,2010,1034,Cabonne,2,New South Wales,Cabonne,NA,Cabonne,0,NA,flood,2010-0066,-33.15326022,148.753561
+354,Australia,AUS,900,2010,1054,Cowra,2,New South Wales,Cowra,NA,Cowra,0,NA,flood,2010-0066,-33.79742442,148.7178856
+354,Australia,AUS,900,2010,1086,Forbes,2,New South Wales,Forbes,NA,Forbes,0,NA,flood,2010-0066,-33.42225078,147.8663771
+354,Australia,AUS,900,2010,1147,Lachlan,2,New South Wales,Lachlan,NA,Lachlan,0,NA,flood,2010-0066,-32.91940184,146.9907302
+354,Australia,AUS,900,2010,1256,Oberon,2,New South Wales,Oberon,NA,Oberon,0,NA,flood,2010-0066,-33.88296943,149.8107851
+354,Australia,AUS,900,2010,1259,Orange,2,New South Wales,Orange,NA,Orange,0,NA,flood,2010-0066,-33.32565598,149.1195168
+354,Australia,AUS,900,2010,1261,Parkes,2,New South Wales,Parkes,NA,Parkes,0,NA,flood,2010-0066,-35.29992077,149.1312189
+354,Australia,AUS,900,2010,1345,Upper Lachlan,2,New South Wales,Upper Lachlan,NA,Crookwell,0,NA,flood,2010-0066,-34.41699161,149.4543687
+354,Australia,AUS,900,2010,1382,Weddin,2,New South Wales,Weddin,NA,Weddin,0,NA,flood,2010-0066,-33.87201993,148.0107105
+355,Australia,AUS,900,2010,978,Balonne,2,Queensland,Balonne,NA,Thallon,0,NA,flood,2010-0103,-28.3158243,148.1163481
+355,Australia,AUS,900,2010,1186,Murweh,2,Queensland,Murweh,NA,Charleville,0,NA,flood,2010-0103,-26.18969525,146.4890925
+355,Australia,AUS,900,2010,1328,Roma,2,Queensland,Roma,NA,Roma,0,NA,flood,2010-0103,-26.56470735,148.801322
+358,Australia,AUS,900,2010,1124,Joondalup,2,Western Australia,Joondalup,NA,Joondalup,0,NA,storm,2010-0125,-31.78498179,115.7643633
+358,Australia,AUS,900,2010,1157,Mandurah,2,Western Australia,Mandurah,NA,Mandurah,0,NA,storm,2010-0125,-32.63584384,115.6830645
+358,Australia,AUS,900,2010,1267,Perth,2,Western Australia,Perth,NA,Perth,0,NA,storm,2010-0125,-31.95564407,115.8554552
+359,Australia,AUS,900,2010,1116,Hume,2,Victoria,Hume,NA,Hume,0,NA,flood,2010-0465,-35.38432465,149.1644762
+359,Australia,AUS,900,2010,1334,Strathbogie,2,Victoria,Strathbogie,NA,Strathbogie,0,NA,flood,2010-0465,-36.76099041,145.4335901
+359,Australia,AUS,900,2010,1383,Wellington,2,Victoria,Wellington,NA,Wellington,0,NA,flood,2010-0465,-32.58927201,149.0119924
+360,Australia,AUS,900,2010,1019,Bundaberg,2,Queensland,Bundaberg,NA,Burnett River at Branyan,0,NA,flood,2010-0624,-24.87893574,152.3443795
+360,Australia,AUS,900,2010,1051,Coonamble,2,New South Wales,Coonamble,NA,Coonamble,0,NA,flood,2010-0624,-30.87159393,148.2920392
+360,Australia,AUS,900,2010,1058,Dalby,2,Queensland,Dalby,NA,Dalby,0,NA,flood,2010-0624,-27.1786023,151.2638663
+360,Australia,AUS,900,2010,1102,Gundagai,2,New South Wales,Gundagai,NA,Gundagai,0,NA,flood,2010-0624,-35.01371815,148.1462445
+360,Australia,AUS,900,2010,1111,Harden,2,New South Wales,Harden,NA,Jugiong,0,NA,flood,2010-0624,-34.61179019,148.405916
+360,Australia,AUS,900,2010,1117,Hume,2,Victoria,Hume,NA,Hume,0,NA,flood,2010-0624,-35.38432465,149.1644762
+360,Australia,AUS,900,2010,1134,Kingston,2,Victoria,Kingston,NA,Kingston,0,NA,flood,2010-0624,-35.318169,149.1445274
+360,Australia,AUS,900,2010,1160,Maribyrnong,2,Victoria,Maribyrnong,NA,Maribyrnong,0,NA,flood,2010-0624,-37.79421649,144.8789393
+360,Australia,AUS,900,2010,1167,Mitchell,2,Victoria,Mitchell,NA,Mitchell,0,NA,flood,2010-0624,-35.21987602,149.1355005
+360,Australia,AUS,900,2010,1170,Monash,2,Victoria,Monash,NA,Monash,0,NA,flood,2010-0624,-35.41789042,149.0893386
+360,Australia,AUS,900,2010,1198,Narrabri,2,New South Wales,Narrabri,NA,Wee Waa,0,NA,flood,2010-0624,-30.35602055,149.5645647
+360,Australia,AUS,900,2010,1262,Parkes,2,New South Wales,Parkes,NA,Parkes,0,NA,flood,2010-0624,-35.29992077,149.1312189
+360,Australia,AUS,900,2010,1272,Queanbeyan,2,New South Wales,Queanbeyan,NA,Queanbeyan,0,NA,flood,2010-0624,-35.41147163,149.220779
+360,Australia,AUS,900,2010,1323,Rockhampton,2,Queensland,Rockhampton,NA,Oakey Creek,0,NA,flood,2010-0624,-23.35095644,150.5251617
+360,Australia,AUS,900,2010,1329,Roma,2,Queensland,Roma,NA,Roma,0,NA,flood,2010-0624,-26.56470735,148.801322
+360,Australia,AUS,900,2010,1337,Western Downs,2,Queensland,Western Downs,NA,Tara,0,NA,flood,2010-0624,-27.4990695,150.1190072
+360,Australia,AUS,900,2010,1374,Warren,2,New South Wales,Warren,NA,Warren,0,NA,flood,2010-0624,-31.32464979,147.6794101
+361,Australia,AUS,900,2010,977,Ballina,2,New South Wales,Ballina,NA,Ballina,0,NA,flood,2010-0656,-28.85255366,153.4882203
+361,Australia,AUS,900,2010,979,Balonne,2,Queensland,Balonne,NA,Balonne,0,NA,flood,2010-0656,-28.3158243,148.1163481
+361,Australia,AUS,900,2010,983,Banana,2,Queensland,Banana,NA,Banana,0,NA,flood,2010-0656,-24.51804332,150.2442679
+361,Australia,AUS,900,2010,993,Bellingen,2,New South Wales,Bellingen,NA,Bellingen,0,NA,flood,2010-0656,-30.40336806,152.7286564
+361,Australia,AUS,900,2010,1020,Bundaberg,2,Queensland,Bundaberg,NA,Bundaberg,0,NA,flood,2010-0656,-24.87893574,152.3443795
+361,Australia,AUS,900,2010,1031,Byron,2,New South Wales,Byron,NA,Byron,0,NA,flood,2010-0656,-28.60398807,153.4847717
+361,Australia,AUS,900,2010,1046,Western Downs,2,Queensland,Western Downs,NA,Chinchilla,0,NA,flood,2010-0656,-26.41892249,150.6875316
+361,Australia,AUS,900,2010,1075,Central Highlands,2,Queensland,Central Highlands,NA,Emerald,0,NA,flood,2010-0656,-23.79846468,147.7817685
+361,Australia,AUS,900,2010,1087,Gannawarra,2,Victoria,Gannawarra,NA,Gannawarra,0,NA,flood,2010-0656,-35.75172156,143.8044403
+361,Australia,AUS,900,2010,1088,Lockyer Valley,2,Queensland,Lockyer Valley,NA,Gatton,0,NA,flood,2010-0656,-27.63567073,152.1768422
+361,Australia,AUS,900,2010,1099,Greater Taree,2,New South Wales,Greater Taree,NA,Greater Taree,0,NA,flood,2010-0656,-31.7931208,152.2818601
+361,Australia,AUS,900,2010,1123,Jericho,2,Queensland,Jericho,NA,Jericho,0,NA,flood,2010-0656,-23.47215127,146.4428042
+361,Australia,AUS,900,2010,1132,Kempsey,2,New South Wales,Kempsey,NA,Kempsey,0,NA,flood,2010-0656,-30.95237783,152.6447299
+361,Australia,AUS,900,2010,1144,Kyogle,2,New South Wales,Kyogle,NA,Bonalbo,0,NA,flood,2010-0656,-28.61937447,152.7748359
+361,Australia,AUS,900,2010,1324,Rockhampton,2,Queensland,Rockhampton,NA,Rockhampton,0,NA,flood,2010-0656,-23.35095644,150.5251617
+361,Australia,AUS,900,2010,1341,Tenterfield,2,New South Wales,Tenterfield,NA,Tenterfield,0,NA,flood,2010-0656,-28.944678,152.0862682
+361,Australia,AUS,900,2010,1343,Theodore,2,Queensland,Theodore,NA,Theodore,0,NA,flood,2010-0656,-35.44930502,149.1194939
+363,Australia,AUS,900,2011,1110,Halls Creek,2,Western Australia,Halls Creek,NA,Warmum,0,NA,flood,2011-0080,-19.18663639,127.5254742
+364,Australia,AUS,900,2012,980,Balonne,2,Queensland,Balonne,NA,Balonne,0,NA,flood,2012-0029,-28.3158243,148.1163481
+364,Australia,AUS,900,2012,994,Bellingen,2,New South Wales,Bellingen,NA,Bellingen,0,NA,flood,2012-0029,-30.40336806,152.7286564
+364,Australia,AUS,900,2012,1177,Moree Plains,2,New South Wales,Moree Plains,NA,Moree,0,NA,flood,2012-0029,-29.25360575,149.6278206
+364,Australia,AUS,900,2012,1182,Mount Isa,2,Queensland,Mount Isa,NA,Between Mount Isa,0,NA,flood,2012-0029,-19.96621384,138.7823077
+364,Australia,AUS,900,2012,1187,Murweh,2,Queensland,Murweh,NA,Charleville,0,NA,flood,2012-0029,-26.18969525,146.4890925
+364,Australia,AUS,900,2012,1330,Roma,2,Queensland,Roma,NA,Roma,0,NA,flood,2012-0029,-26.56470735,148.801322
+364,Australia,AUS,900,2012,1372,Walgett,2,New South Wales,Walgett,NA,Walgett,0,NA,flood,2012-0029,-29.81780269,148.1944686
+364,Australia,AUS,900,2012,1393,Winton,2,Queensland,Winton,NA,Winton,0,NA,flood,2012-0029,-22.5402121,142.4236645
+365,Australia,AUS,900,2012,981,Balonne,2,Queensland,Balonne,NA,Dirranbandi,0,NA,flood,2012-0037,-28.3158243,148.1163481
+365,Australia,AUS,900,2012,995,Bellingen,2,New South Wales,Bellingen,NA,Bellingen,0,NA,flood,2012-0037,-30.40336806,152.7286564
+365,Australia,AUS,900,2012,1005,Maranoa,2,Queensland,Maranoa,NA,Booringa,0,NA,flood,2012-0037,-26.36249485,147.7233938
+365,Australia,AUS,900,2012,1013,Brewarrina,2,New South Wales,Brewarrina,NA,Goodooga,0,NA,flood,2012-0037,-29.79229107,146.9607418
+365,Australia,AUS,900,2012,1032,Byron,2,New South Wales,Byron,NA,Byron Bay,0,NA,flood,2012-0037,-28.60398807,153.4847717
+365,Australia,AUS,900,2012,1100,Greater Taree,2,New South Wales,Greater Taree,NA,Greater Taree,0,NA,flood,2012-0037,-31.7931208,152.2818601
+365,Australia,AUS,900,2012,1104,Gunnedah,2,New South Wales,Gunnedah,NA,Gunnedah,0,NA,flood,2012-0037,-31.0458593,150.1887479
+365,Australia,AUS,900,2012,1109,Gwydir,2,New South Wales,Gwydir,NA,Yallaroi,0,NA,flood,2012-0037,-29.60595945,150.5120822
+365,Australia,AUS,900,2012,1133,Kempsey,2,New South Wales,Kempsey,NA,Kempsey,0,NA,flood,2012-0037,-30.95237783,152.6447299
+365,Australia,AUS,900,2012,1145,Kyogle,2,New South Wales,Kyogle,NA,Kyogle,0,NA,flood,2012-0037,-28.61937447,152.7748359
+365,Australia,AUS,900,2012,1178,Moree Plains,2,New South Wales,Moree Plains,NA,Moree,0,NA,flood,2012-0037,-29.25360575,149.6278206
+365,Australia,AUS,900,2012,1188,Murweh,2,Queensland,Murweh,NA,Charleville,0,NA,flood,2012-0037,-26.18969525,146.4890925
+365,Australia,AUS,900,2012,1199,Narrabri,2,New South Wales,Narrabri,NA,Wee-Waa,0,NA,flood,2012-0037,-30.35602055,149.5645647
+365,Australia,AUS,900,2012,1265,Paroo,2,Queensland,Paroo,NA,Cunnamulla,0,NA,flood,2012-0037,-28.07359067,145.7709629
+365,Australia,AUS,900,2012,1331,Roma,2,Queensland,Roma,NA,Maranoa,0,NA,flood,2012-0037,-26.56470735,148.801322
+365,Australia,AUS,900,2012,1342,Tenterfield,2,New South Wales,Tenterfield,NA,Tenterfield,0,NA,flood,2012-0037,-28.944678,152.0862682
+365,Australia,AUS,900,2012,1373,Walgett,2,New South Wales,Walgett,NA,Lightning Ridge,0,NA,flood,2012-0037,-29.81780269,148.1944686
+366,Australia,AUS,900,2013,1021,Bundaberg,2,Queensland,Bundaberg,NA,Bundaberg,0,NA,storm,2013-0008,-24.87893574,152.3443795
+366,Australia,AUS,900,2013,1325,Rockhampton,2,Queensland,Rockhampton,NA,Rockhampton,0,NA,storm,2013-0008,-23.35095644,150.5251617
+268,Australia,AUS,900,1968,1055,Cunderdin,2,Western Australia,Cunderdin,NA,Meckering,0,NA,earthquake,1968-0077,-31.59958132,117.1557197
+290,Australia,AUS,900,1994,1121,Irwin,2,Western Australia,Irwin,NA,Dongara,0,NA,storm,1994-0127,-29.32645356,115.0917485
+290,Australia,AUS,900,1994,1171,Moora,2,Western Australia,Moora,NA,Moora Perth,0,NA,storm,1994-0127,-30.49806675,116.1854356
+315,Australia,AUS,900,2001,1061,Unincorporated Norther Territories,2,Northern Territory,Unincorporated Norther Territories,NA,Kalkarindji,0,NA,flood,2001-0103,-13.1199263,131.1855719
+330,Australia,AUS,900,2004,1009,Bourke,2,New South Wales,Bourke,NA,Warrego,0,NA,flood,2004-0091,-29.9106094,145.3567056
+336,Australia,AUS,900,2005,1200,Narrandera,2,New South Wales,Narrandera,NA,Riverina district,0,NA,storm,2005-0068,-34.61126256,146.5796899
+341,Australia,AUS,900,2006,1327,Roebourne,2,Western Australia,Roebourne,NA,Karratha,0,NA,storm,2006-0155,-21.04939333,117.0361857
+353,Australia,AUS,900,2009,1150,Liverpool Plains,2,New South Wales,Liverpool Plains,NA,Quirindi,0,NA,flood,2009-0589,-31.55062061,150.4384239
+360,Australia,AUS,900,2010,1048,Gympie,2,Queensland,Gympie,NA,Gympie,0,NA,flood,2010-0624,-26.14703222,152.4635718
+361,Australia,AUS,900,2010,968,Ararat,2,Victoria,Ararat,NA,Wimmera river,0,NA,flood,2010-0656,-37.47271842,142.8431712
+361,Australia,AUS,900,2010,1049,Gympie,2,Queensland,Gympie,NA,Cooloola,0,NA,flood,2010-0656,-26.14703222,152.4635718
+365,Australia,AUS,900,2012,1010,Bourke,2,New South Wales,Bourke,NA,Bourke  New South Wales,0,NA,flood,2012-0037,-29.9106094,145.3567056
+346,Australia,AUS,900,2008,1022,Burdekin,2,Queensland,Burdekin,NA,Burdekin,0,NA,flood,2008-0017,-19.82361057,147.2431058
+347,Australia,AUS,900,2008,1023,Burdekin,2,Queensland,Burdekin,NA,Burdekin,0,NA,flood,2008-0098,-19.82361057,147.2431058
+350,Australia,AUS,900,2009,1024,Burdekin,2,Queensland,Burdekin,NA,Burdekin,0,NA,flood,2009-0615,-19.82361057,147.2431058
+353,Australia,AUS,900,2009,1096,Great Lakes,2,New South Wales,Great Lakes,NA,Great Lakes,0,NA,flood,2009-0589,-32.35601806,152.1535735
+353,Australia,AUS,900,2009,1190,Nambucca,2,New South Wales,Nambucca,NA,Nambucca,0,NA,flood,2009-0589,-30.68755635,152.7689389
+354,Australia,AUS,900,2010,989,Bega Valley,2,New South Wales,Bega Valley,NA,Brogo rivers,0,NA,flood,2010-0066,-36.82595546,149.7175686
+354,Australia,AUS,900,2010,1077,Eurobodalla,2,New South Wales,Eurobodalla,NA,Moruya,0,NA,flood,2010-0066,-35.94515676,149.9470492
+361,Australia,AUS,900,2010,1191,Nambucca,2,New South Wales,Nambucca,NA,Nambucca,0,NA,flood,2010-0656,-30.68755635,152.7689389
+363,Australia,AUS,900,2011,1064,Derby-West Kimberley,2,Western Australia,Derby-West Kimberley,NA,Derby-West Kimberley,0,NA,flood,2011-0080,-17.79194145,124.9760335
+365,Australia,AUS,900,2012,1192,Nambucca,2,New South Wales,Nambucca,NA,Nambucca Heads,0,NA,flood,2012-0037,-30.68755635,152.7689389
+01-100,Australia,AUL,900,1986,28008,Orange,2,New South Wales,Orange,NA,Orange,0,NA,storm,1986-0214,-33.32465565,149.1203866
+01-102,Australia,AUL,900,1986,28056,Sydney,2,New South Wales,Sydney,NA,Sydney,0,NA,storm,1986-0216,-33.88937695,151.2027403
+01-112,Australia,AUL,900,1991,28275,Sydney,2,New South Wales,Sydney,NA,Sydney,0,NA,storm,1991-0140,-33.88937695,151.2027403
+01-114,Australia,AUL,900,1993,28388,Melbourne,2,Victoria,Melbourne,NA,Melbourne,0,NA,storm,1993-0517,-37.8105024,144.9438982
+01-114,Australia,AUL,900,1993,28389,Greater Shepparton,2,Victoria,Greater Shepparton,NA, Shepparton,0,NA,storm,1993-0517,-36.39699093,145.3861943
+01-117,Australia,AUL,900,1995,28460,Bega Valley,2,New South Wales,Bega Valley,NA, Pambula,0,NA,storm,1995-0441,-36.82595546,149.7175686
+01-118,Australia,AUL,900,1995,28462,Greater Taree,2,New South Wales,Greater Taree,NA, Tarree ,0,NA,storm,1995-0444,-31.79207045,152.2812151
+01-118,Australia,AUL,900,1995,28464,Maitland,2,New South Wales,Maitland,NA, Thornton,0,NA,storm,1995-0444,-32.71081096,151.5497569
+01-119,Australia,AUL,900,1995,28477,Brisbane,2,Queensland,Brisbane,NA, Brisbane,0,NA,storm,1995-0445,-27.43781487,153.0385872
+01-120,Australia,AUL,900,1996,28497,Bathurst,2,New South Wales,Bathurst,NA, Bathurst ,0,NA,storm,1996-0317,-33.43007958,149.5255535
+01-120,Australia,AUL,900,1996,28498,Dubbo,2,New South Wales,Dubbo,NA,Dubbo,0,NA,storm,1996-0317,-32.22520559,148.6641647
+01-120,Australia,AUL,900,1996,28499,Young,2,New South Wales,Young,NA, Young,0,NA,storm,1996-0317,-34.22595246,148.2310648
+01-120,Australia,AUL,900,1996,28500,Sydney,2,New South Wales,Sydney,NA, Southern Sydney,0,NA,storm,1996-0317,-33.88937695,151.2027403
+01-124,Australia,AUL,900,2001,28549,Parramatta,2,New South Wales,Parramatta,NA,Granville,0,NA,flood,2001-0028,-33.80981304,151.0154109
+01-124,Australia,AUL,900,2001,28551,Hornsby,2,New South Wales,Hornsby,NA, Hornsby ,0,NA,flood,2001-0028,-33.58682929,151.0891425
+01-124,Australia,AUL,900,2001,28553,Wentworth,2,New South Wales,Wentworth,NA, Wenworthville,0,NA,flood,2001-0028,-33.57019464,142.2428434
+01-124,Australia,AUL,900,2001,28554,Hawkesbury,2,New South Wales,Hawkesbury,NA, Hawkesbury ,0,NA,flood,2001-0028,-33.33482779,150.7731982
+01-124,Australia,AUL,900,2001,28555,Holroyd,2,New South Wales,Holroyd,NA,Merrylands,0,NA,flood,2001-0028,-33.82836263,150.957471
+Jan-64,Australia,AUL,900,1974,29925,Brisbane,2,Queensland,Brisbane,NA,Brisbane ,0,NA,storm,1974-0091,-27.43781487,153.0385872
+Jan-75,Australia,AUL,900,1978,30087,Newcastle,2,New South Wales,Newcastle,NA, Newcastle,0,NA,storm,1978-0238,-32.87589957,151.7047811
+Jan-75,Australia,AUL,900,1978,30088,Wollongong,2,New South Wales,Wollongong,NA, Wollongong ,0,NA,storm,1978-0238,-34.36885599,150.8370731
+Jan-75,Australia,AUL,900,1978,30089,Sydney,2,New South Wales,Sydney,NA,Sydney,0,NA,storm,1978-0238,-33.88937695,151.2027403
+Jan-76,Australia,AUL,900,1978,30097,Sydney,2,New South Wales,Sydney,NA,Sydney,0,NA,storm,1978-0239,-33.88937695,151.2027403
+Jan-76,Australia,AUL,900,1978,30099,Penrith,2,New South Wales,Penrith,NA, Penrith ,0,NA,storm,1978-0239,-33.76538246,150.718052
+Jan-80,Australia,AUL,900,1978,30168,Sydney,2,New South Wales,Sydney,NA,Sydney ,0,NA,storm,1978-0240,-33.88937695,151.2027403
+Jan-81,Australia,AUL,900,1978,30197,Victor Harbor,2,South Australia,Victor Harbor,NA, Victoria Harbour,0,NA,storm,1978-0204,-35.51278983,138.5461606
+Jan-88,Australia,AUL,900,1980,30275,Brisbane,2,Queensland,Brisbane,NA,Brisbane,0,NA,storm,1980-0290,-27.43781487,153.0385872
+Jan-97,Australia,AUL,900,1983,30493,Bunbury,2,Western Australia,Bunbury,NA, Bunbury,0,NA,storm,1983-0461,-33.35175452,115.6644751
+Jan-97,Australia,AUL,900,1983,30494,Perth,2,Western Australia,Perth,NA,Perth,0,NA,storm,1983-0461,-31.95763436,115.8506628
+Jan-98,Australia,AUL,900,1985,30497,Melbourne,2,Victoria,Melbourne,NA,Melbourne,0,NA,storm,1985-0334,-37.8105024,144.9438982
+Jan-99,Australia,AUL,900,1985,30505,Hobart,2,Tasmania,Hobart,NA,Hobart,0,NA,flood,1985-0210,-42.89783873,147.2876087
+Jan-99,Australia,AUL,900,1985,30506,Melbourne,2,Victoria,Melbourne,NA, Melbourne,0,NA,flood,1985-0210,-37.8105024,144.9438982
+Feb-32,Australia,AUL,900,2017,31957,Mackay,2,Queensland,Mackay,NA, Mackay,0,NA,storm,2017-0105,-21.13923807,148.8036419
+Feb-32,Australia,AUL,900,2017,31959,Logan,2,Queensland,Logan,NA,Logan region,0,NA,storm,2017-0105,-27.76240727,153.0402316
+Feb-32,Australia,AUL,900,2017,31960,Whitsunday,2,Queensland,Whitsunday,NA, Airlie beach ,0,NA,storm,2017-0105,-20.70098702,147.7247546
+18-Jun,Australia,AUL,900,2015,44194,Ashburton,2,Western Australia,Ashburton,NA, Ashburton,0,NA,storm,2015-0135,-22.49417582,116.728745
+18-Jun,Australia,AUL,900,2015,44195,Carnarvon,2,Western Australia,Carnarvon,NA,Carnarvon,0,NA,storm,2015-0135,-24.35032517,114.3910318
+18-Jun,Australia,AUL,900,2015,44196,Upper Gascoyne,2,Western Australia,Upper Gascoyne,NA, Upper Gascoyne,0,NA,storm,2015-0135,-24.72579094,116.3567189
+18-Jun,Australia,AUL,900,2015,44197,Geraldton-Greenough,2,Western Australia,Geraldton-Greenough,NA, Geraldton-Greenough,0,NA,storm,2015-0135,-28.83417755,114.8830111
+18-Jun,Australia,AUL,900,2015,44198,Irwin,2,Western Australia,Irwin,NA, Irwin districts ,0,NA,storm,2015-0135,-29.32645356,115.0917485
+291,Australia,AUS,900,1994,1041,Cessnock,2,New South Wales,Cessnock,NA,Cessnock,0,NA,earthquake,1994-0642,-32.92480474,151.2247887
+293,Australia,AUS,900,1996,1375,Warringah,2,New South Wales,Warringah,NA,Northern New South Wales,0,NA,flood,1996-0320,-33.7106787,151.2313438
+299,Australia,AUS,900,1998,1126,Katherine,2,Northern Territory,Katherine,NA,Katherine,0,NA,flood,1998-0022,-14.44592519,132.2718442
+302,Australia,AUS,900,1998,1193,Narrabri,2,New South Wales,Narrabri,NA,Narrabri,0,NA,flood,1998-0227,-30.35602055,149.5645647
+305,Australia,AUS,900,1999,1078,Exmouth,2,Western Australia,Exmouth,NA,Exmouth,0,NA,storm,1999-0092,-22.50639411,114.1987766
+316,Australia,AUS,900,2001,1090,Gladstone,2,Queensland,Gladstone,NA,Gladstone,0,NA,flood,2001-0130,-23.85049828,151.2700384
+327,Australia,AUS,900,2003,1081,Fairfield,2,New South Wales,Fairfield,NA,Fairfield,0,NA,flood,2003-0587,-27.50671185,153.0231587
+329,Australia,AUS,900,2003,1092,Gladstone,2,Queensland,Gladstone,NA,Gladstone,0,NA,storm,2003-0616,-23.85049828,151.2700384
+333,Australia,AUS,900,2004,990,Bellingen,2,New South Wales,Bellingen,NA,Urunga,0,NA,flood,2004-0537,-30.40336806,152.7286564
+337,Australia,AUS,900,2005,1056,Gold Coast,2,Queensland,Gold Coast,NA,Currumbin,0,NA,flood,2005-0523,-28.13641971,153.482713
+338,Australia,AUS,900,2005,972,Australian Capital Territory,1,Australian Capital Territory,NA,NA,Canberra,0,NA,storm,2005-0697,-35.49306739,149.0010156
+339,Australia,AUS,900,2006,1072,East Pilbara,2,Western Australia,East Pilbara,NA,Pilbara Coast,0,NA,storm,2006-0043,-21.75983249,123.4944501
+342,Australia,AUS,900,2006,1127,Katherine,2,Northern Territory,Katherine,NA,Katherine,0,NA,flood,2006-0179,-14.44592519,132.2718442
+348,Australia,AUS,900,2008,1151,Logan,2,Queensland,Logan,NA,Logan,0,NA,storm,2008-0525,-27.70218208,153.0752766
+349,Australia,AUS,900,2008,1068,Central Highlands,2,Queensland,Central Highlands,NA,Duaringa,0,NA,flood,2008-0581,-23.92824481,149.3412046
+357,Australia,AUS,900,2010,1389,Whitsunday,2,Queensland,Whitsunday,NA,Whitsunday,0,NA,storm,2010-0120,-20.38824668,148.5645503
+364,Australia,AUS,900,2012,1168,Mitchell,2,Victoria,Mitchell,NA,Mitchell,0,NA,flood,2012-0029,-35.21987602,149.1355005
+365,Australia,AUS,900,2012,1169,Mitchell,2,Victoria,Mitchell,NA,Mitchell,0,NA,flood,2012-0037,-35.21987602,149.1355005
+369,Australia,AUS,900,2015,1071,Dungog,2,New South Wales,Dungog,NA,Dungog,0,NA,storm,2015-0148,-32.34888305,151.6074315
+350,Australia,AUS,900,2009,1333,South Australia,1,South Australia,NA,NA,lake eyre,0,NA,flood,2009-0615,-30.10814465,135.8314015
+269,Australia,AUS,900,1971,1202,New South Wales,1,New South Wales,NA,NA,South Wales,0,NA,flood,1971-0015,-32.16565906,147.0085368
+269,Australia,AUS,900,1971,1273,Queensland,1,Queensland,NA,NA,Queensland,0,NA,flood,1971-0015,-22.56759196,144.5460786
+269,Australia,AUS,900,1971,1348,Victoria,1,Victoria,NA,NA,Victoria,0,NA,flood,1971-0015,-36.85009222,144.3042888
+270,Australia,AUS,900,1971,1274,Queensland,1,Queensland,NA,NA,Townsville area,0,NA,storm,1971-0096,-22.56759196,144.5460786
+271,Australia,AUS,900,1974,1250,Northern Territory,1,Northern Territory,NA,NA,Darwin,0,NA,storm,1974-0061,-19.41482735,133.3655472
+272,Australia,AUS,900,1976,1275,Queensland,1,Queensland,NA,NA,TooWoomba,0,NA,storm,1976-0128,-22.56759196,144.5460786
+273,Australia,AUS,900,1976,1349,Victoria,1,Victoria,NA,NA,Castlemaine,0,NA,storm,1976-0129,-36.85009222,144.3042888
+274,Australia,AUS,900,1976,1203,New South Wales,1,New South Wales,NA,NA,Sydney,0,NA,storm,1976-0131,-32.16565906,147.0085368
+275,Australia,AUS,900,1982,1350,Victoria,1,Victoria,NA,NA,Victoria,0,NA,storm,1982-0264,-36.85009222,144.3042888
+276,Australia,AUS,900,1982,1276,Queensland,1,Queensland,NA,NA,Southern Queensland,0,NA,storm,1982-0266,-22.56759196,144.5460786
+277,Australia,AUS,900,1984,1204,New South Wales,1,New South Wales,NA,NA,Sydney area,0,NA,flood,1984-0109,-32.16565906,147.0085368
+278,Australia,AUS,900,1985,1277,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,1985-0023,-22.56759196,144.5460786
+280,Australia,AUS,900,1986,1205,New South Wales,1,New South Wales,NA,NA,Sydney,0,NA,storm,1986-0121,-32.16565906,147.0085368
+281,Australia,AUS,900,1989,1206,New South Wales,1,New South Wales,NA,NA,Newcastle,0,NA,earthquake,1989-0142,-32.16565906,147.0085368
+282,Australia,AUS,900,1990,1207,New South Wales,1,New South Wales,NA,NA,Sydney,0,NA,storm,1990-0272,-32.16565906,147.0085368
+284,Australia,AUS,900,1990,1278,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,1990-0422,-22.56759196,144.5460786
+286,Australia,AUS,900,1992,1208,New South Wales,1,New South Wales,NA,NA,Sydney region,0,NA,storm,1992-0178,-32.16565906,147.0085368
+287,Australia,AUS,900,1992,1351,Victoria,1,Victoria,NA,NA,Victoria,0,NA,storm,1992-0380,-36.85009222,144.3042888
+288,Australia,AUS,900,1993,1209,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,flood,1993-0214,-32.16565906,147.0085368
+288,Australia,AUS,900,1993,1352,Victoria,1,Victoria,NA,NA,Victoria,0,NA,flood,1993-0214,-36.85009222,144.3042888
+292,Australia,AUS,900,1994,1211,New South Wales,1,New South Wales,NA,NA,South Wales,0,NA,storm,1994-0555,-32.16565906,147.0085368
+292,Australia,AUS,900,1994,1353,Victoria,1,Victoria,NA,NA,Victoria,0,NA,storm,1994-0555,-36.85009222,144.3042888
+293,Australia,AUS,900,1996,1279,Queensland,1,Queensland,NA,NA,Brisbane,0,NA,flood,1996-0320,-22.56759196,144.5460786
+294,Australia,AUS,900,1996,1212,New South Wales,1,New South Wales,NA,NA,Sydney,0,NA,storm,1996-0195,-32.16565906,147.0085368
+295,Australia,AUS,900,1996,1213,New South Wales,1,New South Wales,NA,NA,Armidale,0,NA,storm,1996-0321,-32.16565906,147.0085368
+296,Australia,AUS,900,1996,1214,New South Wales,1,New South Wales,NA,NA,Coffs Harbour,0,NA,flood,1996-0272,-32.16565906,147.0085368
+297,Australia,AUS,900,1997,1280,Queensland,1,Queensland,NA,NA,Queensland State,0,NA,flood,1997-0015,-22.56759196,144.5460786
+298,Australia,AUS,900,1998,1281,Queensland,1,Queensland,NA,NA,Towsville Area,0,NA,flood,1998-0011,-22.56759196,144.5460786
+301,Australia,AUS,900,1998,1354,Victoria,1,Victoria,NA,NA,Victoria State,0,NA,flood,1998-0192,-36.85009222,144.3042888
+303,Australia,AUS,900,1998,1215,New South Wales,1,New South Wales,NA,NA,Wollongong,0,NA,flood,1998-0261,-32.16565906,147.0085368
+304,Australia,AUS,900,1999,1283,Queensland,1,Queensland,NA,NA,Queensland State,0,NA,storm,1999-0051,-22.56759196,144.5460786
+306,Australia,AUS,900,1999,1216,New South Wales,1,New South Wales,NA,NA,Sydney,0,NA,storm,1999-0104,-32.16565906,147.0085368
+308,Australia,AUS,900,2000,1217,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2000-0097,-32.16565906,147.0085368
+309,Australia,AUS,900,2000,1285,Queensland,1,Queensland,NA,NA,Townsville,0,NA,storm,2000-0214,-22.56759196,144.5460786
+310,Australia,AUS,900,2000,1286,Queensland,1,Queensland,NA,NA,Queensland,0,NA,flood,2000-0750,-22.56759196,144.5460786
+312,Australia,AUS,900,2001,1219,New South Wales,1,New South Wales,NA,NA,Sydney,0,NA,storm,2001-0030,-32.16565906,147.0085368
+313,Australia,AUS,900,2001,1355,Victoria,1,Victoria,NA,NA,Illawara,0,NA,storm,2001-0045,-36.85009222,144.3042888
+314,Australia,AUS,900,2001,1221,New South Wales,1,New South Wales,NA,NA,Maclean,0,NA,flood,2001-0087,-32.16565906,147.0085368
+317,Australia,AUS,900,2001,1287,Queensland,1,Queensland,NA,NA,Gold coast,0,NA,storm,2001-0301,-22.56759196,144.5460786
+319,Australia,AUS,900,2002,1224,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2002-0637,-32.16565906,147.0085368
+321,Australia,AUS,900,2003,1225,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2003-0066,-32.16565906,147.0085368
+322,Australia,AUS,900,2003,1356,Victoria,1,Victoria,NA,NA,Fitzroy,0,NA,flood,2003-0079,-36.85009222,144.3042888
+324,Australia,AUS,900,2003,1227,New South Wales,1,New South Wales,NA,NA,Wyong,0,NA,flood,2003-0292,-32.16565906,147.0085368
+324,Australia,AUS,900,2003,1357,Victoria,1,Victoria,NA,NA,Illawarra,0,NA,flood,2003-0292,-36.85009222,144.3042888
+325,Australia,AUS,900,2003,1358,Victoria,1,Victoria,NA,NA,Dendifo,0,NA,storm,2003-0288,-36.85009222,144.3042888
+326,Australia,AUS,900,2003,1228,New South Wales,1,New South Wales,NA,NA,Sydney region,0,NA,storm,2003-0560,-32.16565906,147.0085368
+327,Australia,AUS,900,2003,1359,Victoria,1,Victoria,NA,NA,Victoria,0,NA,flood,2003-0587,-36.85009222,144.3042888
+328,Australia,AUS,900,2003,1360,Victoria,1,Victoria,NA,NA,Melbourne region,0,NA,storm,2003-0615,-36.85009222,144.3042888
+331,Australia,AUS,900,2004,1290,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,2004-0674,-22.56759196,144.5460786
+331,Australia,AUS,900,2004,1361,Victoria,1,Victoria,NA,NA,Victoria,0,NA,storm,2004-0674,-36.85009222,144.3042888
+332,Australia,AUS,900,2004,1230,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2004-0400,-32.16565906,147.0085368
+332,Australia,AUS,900,2004,1362,Victoria,1,Victoria,NA,NA,Vicoria,0,NA,storm,2004-0400,-36.85009222,144.3042888
+334,Australia,AUS,900,2004,1291,Queensland,1,Queensland,NA,NA,Brisbane region,0,NA,storm,2004-0589,-22.56759196,144.5460786
+335,Australia,AUS,900,2004,1292,Queensland,1,Queensland,NA,NA,Eidsvold,0,NA,flood,2004-0662,-22.56759196,144.5460786
+338,Australia,AUS,900,2005,1234,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2005-0697,-32.16565906,147.0085368
+338,Australia,AUS,900,2005,1294,Queensland,1,Queensland,NA,NA,Quuensland,0,NA,storm,2005-0697,-22.56759196,144.5460786
+338,Australia,AUS,900,2005,1363,Victoria,1,Victoria,NA,NA,Victoria,0,NA,storm,2005-0697,-36.85009222,144.3042888
+340,Australia,AUS,900,2006,1295,Queensland,1,Queensland,NA,NA,Cairns,0,NA,storm,2006-0139,-22.56759196,144.5460786
+343,Australia,AUS,900,2007,1253,Northern Territory,1,Northern Territory,NA,NA,Northern territory,0,NA,storm,2007-0591,-19.41482735,133.3655472
+343,Australia,AUS,900,2007,1385,Western Australia,1,Western Australia,NA,NA,Pibara region,0,NA,storm,2007-0591,-25.4660083,122.1816948
+345,Australia,AUS,900,2008,1296,Queensland,1,Queensland,NA,NA,Canungra,0,NA,flood,2008-0014,-22.56759196,144.5460786
+346,Australia,AUS,900,2008,1237,New South Wales,1,New South Wales,NA,NA,Yamba,0,NA,flood,2008-0017,-32.16565906,147.0085368
+347,Australia,AUS,900,2008,1364,Victoria,1,Victoria,NA,NA,Fitzroy,0,NA,flood,2008-0098,-36.85009222,144.3042888
+350,Australia,AUS,900,2009,1238,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,flood,2009-0615,-32.16565906,147.0085368
+350,Australia,AUS,900,2009,1365,Victoria,1,Victoria,NA,NA,Thomson river,0,NA,flood,2009-0615,-36.85009222,144.3042888
+351,Australia,AUS,900,2009,1302,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,2009-0048,-22.56759196,144.5460786
+352,Australia,AUS,900,2009,1239,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2009-0230,-32.16565906,147.0085368
+352,Australia,AUS,900,2009,1303,Queensland,1,Queensland,NA,NA,Queesland,0,NA,storm,2009-0230,-22.56759196,144.5460786
+356,Australia,AUS,900,2010,1242,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2010-0102,-32.16565906,147.0085368
+356,Australia,AUS,900,2010,1338,Tasmania,1,Tasmania,NA,NA,Tasmania,0,NA,storm,2010-0102,-41.9685443,146.6261349
+356,Australia,AUS,900,2010,1366,Victoria,1,Victoria,NA,NA,Victoria,0,NA,storm,2010-0102,-36.85009222,144.3042888
+359,Australia,AUS,900,2010,1306,Queensland,1,Queensland,NA,NA,Broken River,0,NA,flood,2010-0465,-22.56759196,144.5460786
+366,Australia,AUS,900,2013,1247,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2013-0008,-32.16565906,147.0085368
+367,Australia,AUS,900,2014,1313,Queensland,1,Queensland,NA,NA,Brisbane,0,NA,storm,2014-0475,-22.56759196,144.5460786
+368,Australia,AUS,900,2015,1254,Northern Territory,1,Northern Territory,NA,NA,Northern territory,0,NA,storm,2015-0053,-19.41482735,133.3655472
+368,Australia,AUS,900,2015,1387,Western Australia,1,Western Australia,NA,NA,Western,0,NA,storm,2015-0053,-25.4660083,122.1816948
+300,Australia,AUS,900,1998,1025,Burke,2,Queensland,Burke,NA,Burketown,0,NA,flood,1998-0059,-18.04325109,138.9483814
+307,Australia,AUS,900,1999,1326,Roebourne,2,Western Australia,Roebourne,NA,Roeburne,0,NA,storm,1999-0739,-21.04939333,117.0361857
+311,Australia,AUS,900,2000,1015,Broome,2,Western Australia,Broome,NA,Bidyadanga,0,NA,storm,2000-0843,-18.67869406,122.463231
+362,Australia,AUS,900,2011,1040,Cassowary Coast,2,Queensland,Cassowary Coast,NA,Cardwell,0,NA,storm,2011-0070,-17.95940194,145.925811
+01-101,Australia,AUL,900,1986,28027,Queensland,1,Queensland,NA,NA,North Queensland,0,NA,storm,1986-0029,-22.56759196,144.5460786
+01-103,Australia,AUL,900,1986,28098,Adelaide,2,South Australia,Adelaide,NA,Adelaid,0,NA,storm,1986-0217,-34.92198368,138.5989131
+01-105,Australia,AUL,900,1988,28127,Queensland,1,Queensland,NA,NA,Queensland,0,NA,flood,1988-0659,-22.56759196,144.5460786
+01-106,Australia,AUL,900,1988,28156,Alice Springs,2,Northern Territory,Alice Springs,NA,Alice Springs,0,NA,storm,1988-0658,-23.73501837,133.8547533
+01-107,Australia,AUL,900,1988,28164,New South Wales,1,New South Wales,NA,NA, North New South Wales,0,NA,flood,1988-0660,-32.16565906,147.0085368
+01-107,Australia,AUL,900,1988,28165,Queensland,1,Queensland,NA,NA,South Queensland,0,NA,flood,1988-0660,-22.56759196,144.5460786
+01-109,Australia,AUL,900,1989,28215,New South Wales,1,New South Wales,NA,NA,South New Gales,0,NA,storm,1989-0398,-32.16565906,147.0085368
+01-109,Australia,AUL,900,1989,28216,Queensland,1,Queensland,NA,NA, Queensland,0,NA,storm,1989-0398,-22.56759196,144.5460786
+01-110,Australia,AUL,900,1989,28237,New South Wales,1,New South Wales,NA,NA, North New South Wales,0,NA,flood,1989-0396,-32.16565906,147.0085368
+01-110,Australia,AUL,900,1989,28238,Queensland,1,Queensland,NA,NA,South Queensland,0,NA,flood,1989-0396,-22.56759196,144.5460786
+01-111,Australia,AUL,900,1990,28251,Rockhampton,2,Queensland,Rockhampton,NA, Rockhampton,0,NA,storm,1990-0422,-23.02786308,150.2021243
+01-113,Australia,AUL,900,1993,28382,Mandurah,2,Western Australia,Mandurah,NA,Manduarh,0,NA,storm,1993-0516,-32.63407394,115.6830196
+01-115,Australia,AUL,900,1994,28399,Sydney,2,New South Wales,Sydney,NA,Sydney,0,NA,storm,1994-0644,-33.88937695,151.2027403
+01-116,Australia,AUL,900,1995,28427,East Pilbara,2,Western Australia,East Pilbara,NA,Onslow,0,NA,storm,1995-0440,-21.76759304,123.5946973
+01-121,Australia,AUL,900,1996,28521,Sydney,2,New South Wales,Sydney,NA,Sydney,0,NA,storm,1996-0316,-33.88937695,151.2027403
+01-123,Australia,AUL,900,1996,28539,Singleton,2,New South Wales,Singleton,NA,Singleton district,0,NA,storm,1996-0322,-32.6603826,150.9645808
+01-124,Australia,AUL,900,2001,28550,Richmond,2,Queensland,Richmond,NA,North Richmond,0,NA,flood,2001-0028,-20.54063512,142.9010635
+01-125,Australia,AUL,900,2015,28558,New South Wales,1,New South Wales,NA,NA, New South wales,0,NA,storm,2015-0079,-32.16565906,147.0085368
+01-125,Australia,AUL,900,2015,28559,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,2015-0079,-22.56759196,144.5460786
+Jan-62,Australia,AUL,900,1970,29899,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,1970-0109,-22.56759196,144.5460786
+Jan-63,Australia,AUL,900,1973,29912,Queensland,1,Queensland,NA,NA,Queensland,0,NA,flood,1973-0051,-22.56759196,144.5460786
+Jan-63,Australia,AUL,900,1973,29913,New South Wales,1,New South Wales,NA,NA, New South Wales,0,NA,flood,1973-0051,-32.16565906,147.0085368
+Jan-65,Australia,AUL,900,1974,29927,Brisbane,2,Queensland,Brisbane,NA,Brisbane,0,NA,flood,1974-0096,-27.43781487,153.0385872
+Jan-66,Australia,AUL,900,1975,29930,Sydney,2,New South Wales,Sydney,NA,Sydney,0,NA,flood,1975-0130,-33.88937695,151.2027403
+Jan-68,Australia,AUL,900,1976,29941,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,1976-0163,-22.56759196,144.5460786
+Jan-69,Australia,AUL,900,1976,29953,Bundaberg,2,Queensland,Bundaberg,NA,Bundaberg Qld,0,NA,storm,1976-0164,-24.96790209,152.0356414
+Jan-70,Australia,AUL,900,1976,29966,Queanbeyan,2,New South Wales,Queanbeyan,NA,Queanreyan,0,NA,flood,1976-0067,-35.40927358,149.2220155
+Jan-71,Australia,AUL,900,1976,29974,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,1976-0165,-22.56759196,144.5460786
+Jan-72,Australia,AUL,900,1977,29986,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,1977-0223,-32.16565906,147.0085368
+Jan-73,Australia,AUL,900,1977,30014,Campaspe,2,Victoria,Campaspe,NA,Tongala,0,NA,storm,1977-0224,-36.34519244,144.7164133
+Jan-74,Australia,AUL,900,1977,30062,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,flood,1977-0226,-32.16565906,147.0085368
+Jan-77,Australia,AUL,900,1978,30109,New South Wales,1,New South Wales,NA,NA, New South Wales,0,NA,flood,1978-0198,-32.16565906,147.0085368
+Jan-79,Australia,AUL,900,1978,30139,Victoria,1,Victoria,NA,NA,Eastern parts of Victoria,0,NA,flood,1978-0199,-36.85009222,144.3042888
+Jan-81,Australia,AUL,900,1978,30198,Tasmania,1,Tasmania,NA,NA, Tasmania,0,NA,storm,1978-0204,-41.9685443,146.6261349
+Jan-82,Australia,AUL,900,1979,30201,Western Australia,1,Western Australia,NA,NA,Western Australia,0,NA,storm,1979-0242,-25.4660083,122.1816948
+Jan-85,Australia,AUL,900,1980,30228,New South Wales,1,New South Wales,NA,NA,New South Wales Coast,0,NA,storm,1980-0286,-32.16565906,147.0085368
+Jan-86,Australia,AUL,900,1980,30251,East Pilbara,2,Western Australia,East Pilbara,NA,Pilbara,0,NA,storm,1980-0289,-21.76759304,123.5946973
+Jan-87,Australia,AUL,900,1980,30259,East Pilbara,2,Western Australia,East Pilbara,NA,Pilbara,0,NA,storm,1980-0287,-21.76759304,123.5946973
+Jan-89,Australia,AUL,900,1980,30319,Brighton,2,Tasmania,Brighton,NA,Brighton,0,NA,storm,1980-0291,-42.71933995,147.2608637
+Jan-89,Australia,AUL,900,1980,30320,Queensland,1,Queensland,NA,NA, Queensland,0,NA,storm,1980-0291,-22.56759196,144.5460786
+Jan-90,Australia,AUL,900,1981,30327,Queensland,1,Queensland,NA,NA,Queensland,0,NA,flood,1981-0184,-22.56759196,144.5460786
+Jan-91,Australia,AUL,900,1981,30379,Western Downs,2,Queensland,Western Downs,NA,Dalby,0,NA,flood,1981-0263,-26.84155892,150.3473159
+Jan-92,Australia,AUL,900,1981,30407,Victoria,1,Victoria,NA,NA,Victoria,0,NA,flood,1981-0187,-36.85009222,144.3042888
+Jan-93,Australia,AUL,900,1981,30418,New South Wales,1,New South Wales,NA,NA, New South Wales,0,NA,storm,1981-0193,-32.16565906,147.0085368
+Jan-93,Australia,AUL,900,1981,30419,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,1981-0193,-22.56759196,144.5460786
+Jan-93,Australia,AUL,900,1981,30420,South Australia,1,South Australia,NA,NA, South Australia,0,NA,storm,1981-0193,-30.10814465,135.8314015
+Jan-94,Australia,AUL,900,1982,30426,Queensland,1,Queensland,NA,NA,North Queensland,0,NA,storm,1982-0255,-22.56759196,144.5460786
+Jan-95,Australia,AUL,900,1983,30436,Queensland,1,Queensland,NA,NA,Queensland,0,NA,storm,1983-0457,-22.56759196,144.5460786
+Feb-30,Australia,AUL,900,2016,31820,Queensland,1,Queensland,NA,NA, Queensland,0,NA,storm,2016-0201,-22.56759196,144.5460786
+Feb-30,Australia,AUL,900,2016,31821,Tasmania,1,Tasmania,NA,NA, Tasmania provinces,0,NA,storm,2016-0201,-41.9685443,146.6261349
+Feb-30,Australia,AUL,900,2016,31822,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,storm,2016-0201,-32.16565906,147.0085368
+Feb-31,Australia,AUL,900,2016,31902,Victoria,1,Victoria,NA,NA,Victoria,0,NA,flood,2016-0428,-36.85009222,144.3042888
+Feb-32,Australia,AUL,900,2017,31961,Sydney,2,New South Wales,Sydney,NA, Sydney,0,NA,storm,2017-0105,-33.88937695,151.2027403
+Feb-34,Australia,AUL,900,2018,32058,Queensland,1,Queensland,NA,NA, Halifax,0,NA,flood,2018-0123,-22.56759196,144.5460786
+25-Mar,Australia,AUL,900,1994,36045,Townsville,2,Queensland,Townsville,NA,Townsville,0,NA,extreme temperature ,1994-0641,-19.39103265,146.7116678
+26-Mar,Australia,AUL,900,1994,36096,New South Wales,1,New South Wales,NA,NA,Southern NSW,0,NA,extreme temperature ,1994-0645,-32.16565906,147.0085368
+27-Mar,Australia,AUL,900,1995,36152,Sydney,2,New South Wales,Sydney,NA,Western Sydney,0,NA,extreme temperature ,1995-0443,-33.88937695,151.2027403
+28-Mar,Australia,AUL,900,2009,36309,Tasmania,1,Tasmania,NA,NA, Tasmania ,0,NA,extreme temperature ,2009-0616,-41.9685443,146.6261349
+28-Mar,Australia,AUL,900,2009,36310,Victoria,1,Victoria,NA,NA,Victoria,0,NA,extreme temperature ,2009-0616,-36.85009222,144.3042888
+28-Mar,Australia,AUL,900,2009,36311,New South Wales,1,New South Wales,NA,NA, New South wales ,0,NA,extreme temperature ,2009-0616,-32.16565906,147.0085368
+29-Mar,Australia,AUL,900,2014,36378,Victoria,1,Victoria,NA,NA, Victoria provinces,0,NA,extreme temperature ,2014-0010,-36.85009222,144.3042888
+29-Mar,Australia,AUL,900,2014,36379,Western Australia,1,Western Australia,NA,NA,Western Australia,0,NA,extreme temperature ,2014-0010,-25.4660083,122.1816948
+Apr-35,Australia,AUL,900,1996,39380,Western Australia,1,Western Australia,NA,NA,Gracetown,0,NA,landslide,1996-0225,-25.4660083,122.1816948
+Apr-36,Australia,AUL,900,1997,39404,New South Wales,1,New South Wales,NA,NA,Thredbo,0,NA,landslide,1997-0153,-32.16565906,147.0085368
+28-May,Australia,AUL,900,1974,40849,New South Wales,1,New South Wales,NA,NA,Central New South Wales,0,NA,drought,1974-9100,-32.16565906,147.0085368
+29-May,Australia,AUL,900,1976,40891,Victoria,1,Victoria,NA,NA,Victoria,0,NA,drought,1976-9126,-36.85009222,144.3042888
+29-May,Australia,AUL,900,1976,40892,New South Wales,1,New South Wales,NA,NA, Southern Inland New South Wales,0,NA,drought,1976-9126,-32.16565906,147.0085368
+31-May,Australia,AUL,900,1978,40993,Tasmania,1,Tasmania,NA,NA, Northeast Tasmania,0,NA,drought,1978-9200,-41.9685443,146.6261349
+31-May,Australia,AUL,900,1978,40994,New South Wales,1,New South Wales,NA,NA, New South Wales,0,NA,drought,1978-9200,-32.16565906,147.0085368
+31-May,Australia,AUL,900,1978,40995,Queensland,1,Queensland,NA,NA,Southern Queensland,0,NA,drought,1978-9200,-22.56759196,144.5460786
+31-May,Australia,AUL,900,1978,40996,Victoria,1,Victoria,NA,NA, Victoria,0,NA,drought,1978-9200,-36.85009222,144.3042888
+May-32,Australia,AUL,900,1981,41007,Queensland,1,Queensland,NA,NA,Queensland,0,NA,drought,1981-9188,-22.56759196,144.5460786
+May-32,Australia,AUL,900,1981,41008,Victoria,1,Victoria,NA,NA, Victoria States,0,NA,drought,1981-9188,-36.85009222,144.3042888
+May-32,Australia,AUL,900,1981,41009,New South Wales,1,New South Wales,NA,NA, New South Wales,0,NA,drought,1981-9188,-32.16565906,147.0085368
+May-34,Australia,AUL,900,1992,41031,Queensland,1,Queensland,NA,NA,Queensland,0,NA,drought,1992-9543,-22.56759196,144.5460786
+May-35,Australia,AUL,900,2002,41080,New South Wales,1,New South Wales,NA,NA, New South Wales provinces,0,NA,drought,2002-9611,-32.16565906,147.0085368
+May-35,Australia,AUL,900,2002,41081,Queensland,1,Queensland,NA,NA,Queensland,0,NA,drought,2002-9611,-22.56759196,144.5460786
+May-37,Australia,AUL,900,2018,41146,Victoria,1,Victoria,NA,NA, Victoria ,0,NA,drought,2018-9258,-36.85009222,144.3042888
+May-37,Australia,AUL,900,2018,41147,New South Wales,1,New South Wales,NA,NA,New South Wales,0,NA,drought,2018-9258,-32.16565906,147.0085368
+May-37,Australia,AUL,900,2018,41148,Queensland,1,Queensland,NA,NA, Queensland,0,NA,drought,2018-9258,-22.56759196,144.5460786
+20-Jun,Australia,AUL,900,2015,44270,Queensland,1,Queensland,NA,NA,Queensland,0,NA,flood,2015-0576,-22.56759196,144.5460786
+20-Jun,Australia,AUL,900,2015,44271,New South Wales,1,New South Wales,NA,NA, New South Wales provinces,0,NA,flood,2015-0576,-32.16565906,147.0085368
