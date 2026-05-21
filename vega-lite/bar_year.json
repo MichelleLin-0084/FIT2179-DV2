@@ -1,0 +1,188 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked bar chart of Australian natural disaster events per year by type, 2000-2026",
+  "width": "container",
+  "height": 280,
+  "data": {
+    "values": [
+      {"year": 2000, "disaster_type": "Flood",               "count": 1},
+      {"year": 2000, "disaster_type": "Storm",               "count": 3},
+      {"year": 2000, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2000, "disaster_type": "Infestation",         "count": 1},
+      {"year": 2001, "disaster_type": "Flood",               "count": 4},
+      {"year": 2001, "disaster_type": "Storm",               "count": 3},
+      {"year": 2001, "disaster_type": "Wildfire",            "count": 2},
+      {"year": 2002, "disaster_type": "Drought",             "count": 1},
+      {"year": 2002, "disaster_type": "Storm",               "count": 3},
+      {"year": 2002, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2003, "disaster_type": "Flood",               "count": 4},
+      {"year": 2003, "disaster_type": "Storm",               "count": 5},
+      {"year": 2003, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2004, "disaster_type": "Flood",               "count": 3},
+      {"year": 2004, "disaster_type": "Storm",               "count": 3},
+      {"year": 2004, "disaster_type": "Infestation",         "count": 1},
+      {"year": 2005, "disaster_type": "Flood",               "count": 1},
+      {"year": 2005, "disaster_type": "Storm",               "count": 2},
+      {"year": 2005, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2006, "disaster_type": "Drought",             "count": 1},
+      {"year": 2006, "disaster_type": "Flood",               "count": 1},
+      {"year": 2006, "disaster_type": "Storm",               "count": 3},
+      {"year": 2006, "disaster_type": "Wildfire",            "count": 3},
+      {"year": 2007, "disaster_type": "Flood",               "count": 1},
+      {"year": 2007, "disaster_type": "Storm",               "count": 1},
+      {"year": 2008, "disaster_type": "Flood",               "count": 4},
+      {"year": 2008, "disaster_type": "Storm",               "count": 1},
+      {"year": 2009, "disaster_type": "Extreme temperature", "count": 1},
+      {"year": 2009, "disaster_type": "Flood",               "count": 2},
+      {"year": 2009, "disaster_type": "Storm",               "count": 2},
+      {"year": 2009, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2010, "disaster_type": "Flood",               "count": 5},
+      {"year": 2010, "disaster_type": "Storm",               "count": 3},
+      {"year": 2011, "disaster_type": "Flood",               "count": 1},
+      {"year": 2011, "disaster_type": "Storm",               "count": 1},
+      {"year": 2011, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2012, "disaster_type": "Flood",               "count": 2},
+      {"year": 2013, "disaster_type": "Storm",               "count": 1},
+      {"year": 2013, "disaster_type": "Wildfire",            "count": 2},
+      {"year": 2014, "disaster_type": "Extreme temperature", "count": 1},
+      {"year": 2014, "disaster_type": "Storm",               "count": 1},
+      {"year": 2014, "disaster_type": "Wildfire",            "count": 2},
+      {"year": 2015, "disaster_type": "Flood",               "count": 1},
+      {"year": 2015, "disaster_type": "Storm",               "count": 4},
+      {"year": 2015, "disaster_type": "Wildfire",            "count": 3},
+      {"year": 2016, "disaster_type": "Epidemic",            "count": 1},
+      {"year": 2016, "disaster_type": "Flood",               "count": 1},
+      {"year": 2016, "disaster_type": "Storm",               "count": 1},
+      {"year": 2016, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2017, "disaster_type": "Storm",               "count": 2},
+      {"year": 2017, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2018, "disaster_type": "Drought",             "count": 1},
+      {"year": 2018, "disaster_type": "Extreme temperature", "count": 1},
+      {"year": 2018, "disaster_type": "Flood",               "count": 1},
+      {"year": 2019, "disaster_type": "Flood",               "count": 1},
+      {"year": 2019, "disaster_type": "Wildfire",            "count": 2},
+      {"year": 2020, "disaster_type": "Flood",               "count": 1},
+      {"year": 2020, "disaster_type": "Storm",               "count": 2},
+      {"year": 2021, "disaster_type": "Flood",               "count": 4},
+      {"year": 2021, "disaster_type": "Storm",               "count": 2},
+      {"year": 2021, "disaster_type": "Wildfire",            "count": 1},
+      {"year": 2022, "disaster_type": "Flood",               "count": 5},
+      {"year": 2023, "disaster_type": "Flood",               "count": 4},
+      {"year": 2023, "disaster_type": "Storm",               "count": 2},
+      {"year": 2024, "disaster_type": "Flood",               "count": 2},
+      {"year": 2024, "disaster_type": "Storm",               "count": 1},
+      {"year": 2025, "disaster_type": "Storm",               "count": 2},
+      {"year": 2025, "disaster_type": "Wildfire",            "count": 2},
+      {"year": 2026, "disaster_type": "Flood",               "count": 1},
+      {"year": 2026, "disaster_type": "Wildfire",            "count": 1}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopLeft": 3,
+        "cornerRadiusTopRight": 3,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelAngle": -45,
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "gridColor": "#e5e7eb",
+            "tickColor": "#e5e7eb",
+            "domainColor": "#e5e7eb"
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "count",
+          "type": "quantitative",
+          "title": "Number of events",
+          "axis": {
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "titleFontSize": 12,
+            "titleFont": "DM Sans",
+            "titleColor": "#6b7280",
+            "gridColor": "#e5e7eb",
+            "domainColor": "#e5e7eb"
+          }
+        },
+        "color": {
+          "field": "disaster_type",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Flood",
+              "Storm",
+              "Wildfire",
+              "Drought",
+              "Extreme temperature",
+              "Infestation",
+              "Epidemic"
+            ],
+            "range": [
+              "#0072B2",
+              "#56B4E9",
+              "#E69F00",
+              "#F0E442",
+              "#CC79A7",
+              "#009E73",
+              "#888780"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "year",         "type": "ordinal",      "title": "Year"},
+          {"field": "disaster_type","type": "nominal",      "title": "Type"},
+          {"field": "count",        "type": "quantitative", "title": "Events"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -8,
+        "fontSize": 10,
+        "fontWeight": "500",
+        "font": "DM Sans",
+        "color": "#374151"
+      },
+      "transform": [
+        {
+          "aggregate": [{"op": "sum", "field": "count", "as": "total"}],
+          "groupby": ["year"]
+        },
+        {"filter": "datum.total >= 7"}
+      ],
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "total",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "view": {"stroke": null},
+  "background": "transparent",
+  "config": {
+    "font": "DM Sans",
+    "bar": {"cursor": "pointer"}
+  }
+}
