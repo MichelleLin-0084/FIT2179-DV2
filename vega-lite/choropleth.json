@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth map of Australian natural disaster events by state, 2000-2026",
+  "width": "container",
+  "height": 500,
+  "projection": {
+    "type": "mercator",
+    "center": [134, -28],
+    "scale": 750
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.STATE_NAME",
+          "from": {
+            "data": {
+              "values": [
+                {"state": "New South Wales",             "event_count": 70},
+                {"state": "Queensland",                  "event_count": 55},
+                {"state": "Victoria",                    "event_count": 33},
+                {"state": "Western Australia",           "event_count": 14},
+                {"state": "Tasmania",                    "event_count":  9},
+                {"state": "South Australia",             "event_count":  8},
+                {"state": "Northern Territory",          "event_count":  6},
+                {"state": "Australian Capital Territory","event_count":  3}
+              ]
+            },
+            "key": "state",
+            "fields": ["event_count"]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "strokeWidth": 1.5,
+        "tooltip": true
+      },
+      "encoding": {
+        "color": {
+          "field": "event_count",
+          "type": "quantitative",
+          "title": "Events",
+          "scale": {
+            "scheme": "oranges",
+            "domainMin": 0,
+            "domainMax": 75
+          },
+          "legend": {
+            "title": "Disaster events",
+            "titleFontSize": 12,
+            "titleFont": "DM Sans",
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "labelColor": "#F5F0E8",
+            "titleColor": "#F5F0E8",
+            "orient": "bottom-right",
+            "direction": "horizontal",
+            "gradientLength": 160,
+            "gradientThickness": 12
+          }
+        },
+        "tooltip": [
+          {"field": "properties.STATE_NAME", "type": "nominal",      "title": "State"},
+          {"field": "event_count",           "type": "quantitative", "title": "Disaster events"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"state": "New South Wales",             "label": "NSW\n70",   "lon": 146.5, "lat": -32.0},
+          {"state": "Queensland",                  "label": "QLD\n55",   "lon": 144.5, "lat": -22.0},
+          {"state": "Victoria",                    "label": "VIC\n33",   "lon": 144.8, "lat": -37.0},
+          {"state": "Western Australia",           "label": "WA\n14",    "lon": 122.0, "lat": -27.0},
+          {"state": "South Australia",             "label": "SA\n8",     "lon": 135.5, "lat": -30.0},
+          {"state": "Tasmania",                    "label": "TAS\n9",    "lon": 146.5, "lat": -42.0},
+          {"state": "Northern Territory",          "label": "NT\n6",     "lon": 133.5, "lat": -19.5},
+          {"state": "Australian Capital Territory","label": "ACT\n3",    "lon": 149.1, "lat": -35.5}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "DM Sans",
+        "fontWeight": "500",
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude":  {"field": "lat", "type": "quantitative"},
+        "text":      {"field": "label", "type": "nominal"},
+        "color": {
+          "condition": {
+            "test": "datum.state == 'New South Wales' || datum.state == 'Queensland'",
+            "value": "#ffffff"
+          },
+          "value": "#1a1a2e"
+        },
+        "size": {
+          "condition": {
+            "test": "datum.state == 'Australian Capital Territory'",
+            "value": 9
+          },
+          "value": 11
+        }
+      }
+    }
+  ],
+  "view": {"stroke": null},
+  "background": "transparent",
+  "config": {
+    "font": "DM Sans"
+  }
+}
