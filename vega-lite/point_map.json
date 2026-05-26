@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Geocoded disaster locations across Australia (GDIS 1968-2018)",
+  "width": "container",
+  "height": 500,
+  "projection": {
+    "type": "mercator",
+    "center": [134, -28],
+    "scale": 750
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/ne_1-3.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_10m_admin_1_states_provinces"
+        }
+      },
+      "transform": [
+        {"filter": "datum.properties.admin == 'Australia'"}
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#2a3f5f",
+        "stroke": "#4a6080",
+        "strokeWidth": 0.8
+      }
+    },
+    {
+      "data": {"url": "data/gdis_australia.csv"},
+      "params": [
+        {
+          "name": "picked",
+          "select": {"type": "point", "fields": ["disastertype"]},
+          "bind": "legend"
+        }
+      ],
+      "mark": {"type": "circle", "filled": true, "tooltip": true},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude":  {"field": "latitude",  "type": "quantitative"},
+        "fill": {
+          "field": "disastertype",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Flood", "Storm", "Drought", "Extreme Temperature", "Earthquake", "Landslide"],
+            "range":  ["#0072B2", "#56B4E9", "#F0E442", "#CC79A7", "#009E73", "#E69F00"]
+          },
+          "legend": {
+            "title": "Click to highlight",
+            "titleFontSize": 11,
+            "titleColor": "#aab0c0",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "labelFontSize": 12,
+            "labelFont": "DM Sans",
+            "symbolSize": 200,
+            "symbolType": "circle",
+            "symbolFillColor": "auto",
+            "labelColor": "#F5F0E8",
+            "padding": 8,
+            "columnPadding": 16
+          }
+        },
+        "fillOpacity": {
+          "condition": {"param": "picked", "empty": true, "value": 0.9},
+          "value": 0.05
+        },
+        "size": {
+          "condition": {"param": "picked", "empty": true, "value": 65},
+          "value": 25
+        },
+        "stroke": {"value": "#ffffff"},
+        "strokeWidth": {"value": 0.3},
+        "tooltip": [
+          {"field": "disastertype", "type": "nominal",      "title": "Disaster type"},
+          {"field": "year",         "type": "quantitative", "title": "Year"},
+          {"field": "location",     "type": "nominal",      "title": "Location"},
+          {"field": "adm1",         "type": "nominal",      "title": "State"}
+        ]
+      }
+    }
+  ],
+  "view": {"stroke": null},
+  "background": "transparent",
+  "config": {"font": "DM Sans"}
+}
