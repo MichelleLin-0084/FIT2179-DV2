@@ -3,11 +3,12 @@
   "description": "Geocoded disaster locations across Australia (GDIS 1968-2018)",
   "width": 800,
   "height": 500,
+  "autosize": {"type": "fit", "contains": "padding"},
   "background": "transparent",
   "projection": {
     "type": "mercator",
-    "center": [134, -28],
-    "scale": 750
+    "center": [133, -28],
+    "scale": 600
   },
   "params": [
     {
@@ -47,10 +48,11 @@
       "mark": {
         "type": "circle",
         "filled": true,
-        "size": 100,
-        "opacity": 1,
+        "size": 60,
+        "opacity": 0.8,
         "stroke": "white",
-        "strokeWidth": 1
+        "strokeWidth": 1,
+        "cursor": "pointer"
       },
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
