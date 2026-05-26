@@ -24,7 +24,7 @@
   "layer": [
     {
       "data": {
-        "url": "data/ne_1-3.json",
+        "url": "../data/ne_1-3.json",
         "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
       },
       "transform": [{"filter": "datum.properties.admin == 'Australia'"}],
@@ -36,7 +36,7 @@
       }
     },
     {
-      "data": {"url": "data/gdis_australia.csv"},
+      "data": {"url": "../data/gdis_australia.csv"},
       "transform": [
         {
           "filter": "filterType == 'All' || datum.disastertype == filterType"
@@ -48,8 +48,7 @@
         "size": 100,
         "opacity": 1,
         "stroke": "white",
-        "strokeWidth": 1,
-        "tooltip": {"content": "data"}
+        "strokeWidth": 1
       },
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
@@ -66,7 +65,12 @@
             "orient": "bottom",
             "labelColor": "#F5F0E8"
           }
-        }
+        },
+        "tooltip": [
+          {"field": "disastertype", "type": "nominal", "title": "Type"},
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "location", "type": "nominal", "title": "Location"}
+        ]
       }
     }
   ],
