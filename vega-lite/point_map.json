@@ -25,36 +25,31 @@
     {
       "data": {
         "url": "data/ne_1-3.json",
-        "format": {
-          "type": "topojson",
-          "feature": "ne_10m_admin_1_states_provinces"
-        }
+        "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
       },
-      "transform": [
-        {"filter": "datum.properties.admin == 'Australia'"}
-      ],
+      "transform": [{"filter": "datum.properties.admin == 'Australia'"}],
       "mark": {
         "type": "geoshape",
         "fill": "#2a3f5f",
         "stroke": "#4a6080",
-        "strokeWidth": 0.8
+        "strokeWidth": 0.5
       }
     },
     {
       "data": {"url": "data/gdis_australia.csv"},
       "transform": [
         {
-          "filter": "filterType === 'All' || datum.disastertype === filterType"
+          "filter": "filterType == 'All' || datum.disastertype == filterType"
         }
       ],
       "mark": {
         "type": "circle",
         "filled": true,
-        "size": 80,
-        "opacity": 0.8,
+        "size": 100,
+        "opacity": 1,
         "stroke": "white",
-        "strokeWidth": 0.5,
-        "cursor": "pointer"
+        "strokeWidth": 1,
+        "tooltip": {"content": "data"}
       },
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
@@ -69,18 +64,9 @@
           "legend": {
             "title": null,
             "orient": "bottom",
-            "direction": "horizontal",
-            "labelFontSize": 12,
-            "symbolSize": 200,
             "labelColor": "#F5F0E8"
           }
-        },
-        "tooltip": [
-          {"field": "disastertype", "type": "nominal", "title": "Type"},
-          {"field": "year", "type": "quantitative", "title": "Year"},
-          {"field": "location", "type": "nominal", "title": "Location"},
-          {"field": "adm1", "type": "nominal", "title": "State"}
-        ]
+        }
       }
     }
   ],
