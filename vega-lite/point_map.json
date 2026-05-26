@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Geocoded disaster locations across Australia (GDIS 1968-2018)",
-  "width": "container",
+  "width": 800,
   "height": 500,
   "background": "transparent",
   "projection": {
@@ -24,7 +24,7 @@
   "layer": [
     {
       "data": {
-        "url": "../data/ne_1-3.json",
+        "url": "https://raw.githubusercontent.com/MichelleLin-0084/FIT2179-DV2/main/data/ne_1-3.json",
         "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
       },
       "transform": [{"filter": "datum.properties.admin == 'Australia'"}],
@@ -36,7 +36,9 @@
       }
     },
     {
-      "data": {"url": "../data/gdis_australia.csv"},
+      "data": {
+        "url": "https://raw.githubusercontent.com/MichelleLin-0084/FIT2179-DV2/main/data/gdis_australia.csv"
+      },
       "transform": [
         {
           "filter": "filterType == 'All' || datum.disastertype == filterType"
