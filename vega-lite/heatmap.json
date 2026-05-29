@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap of Australian natural disaster frequency by month and type, 2000-2026",
+  "width": "container",
+  "height": 300,
+  "data": {
+    "values": [
+      {"disaster_type": "Flood",               "month": 1,  "month_name": "Jan", "count": 9},
+      {"disaster_type": "Flood",               "month": 2,  "month_name": "Feb", "count": 12},
+      {"disaster_type": "Flood",               "month": 3,  "month_name": "Mar", "count": 8},
+      {"disaster_type": "Flood",               "month": 4,  "month_name": "Apr", "count": 3},
+      {"disaster_type": "Flood",               "month": 5,  "month_name": "May", "count": 1},
+      {"disaster_type": "Flood",               "month": 6,  "month_name": "Jun", "count": 3},
+      {"disaster_type": "Flood",               "month": 7,  "month_name": "Jul", "count": 1},
+      {"disaster_type": "Flood",               "month": 8,  "month_name": "Aug", "count": 0},
+      {"disaster_type": "Flood",               "month": 9,  "month_name": "Sep", "count": 2},
+      {"disaster_type": "Flood",               "month": 10, "month_name": "Oct", "count": 2},
+      {"disaster_type": "Flood",               "month": 11, "month_name": "Nov", "count": 5},
+      {"disaster_type": "Flood",               "month": 12, "month_name": "Dec", "count": 4},
+      {"disaster_type": "Storm",               "month": 1,  "month_name": "Jan", "count": 9},
+      {"disaster_type": "Storm",               "month": 2,  "month_name": "Feb", "count": 7},
+      {"disaster_type": "Storm",               "month": 3,  "month_name": "Mar", "count": 9},
+      {"disaster_type": "Storm",               "month": 4,  "month_name": "Apr", "count": 4},
+      {"disaster_type": "Storm",               "month": 5,  "month_name": "May", "count": 3},
+      {"disaster_type": "Storm",               "month": 6,  "month_name": "Jun", "count": 1},
+      {"disaster_type": "Storm",               "month": 7,  "month_name": "Jul", "count": 1},
+      {"disaster_type": "Storm",               "month": 8,  "month_name": "Aug", "count": 1},
+      {"disaster_type": "Storm",               "month": 9,  "month_name": "Sep", "count": 1},
+      {"disaster_type": "Storm",               "month": 10, "month_name": "Oct", "count": 2},
+      {"disaster_type": "Storm",               "month": 11, "month_name": "Nov", "count": 3},
+      {"disaster_type": "Storm",               "month": 12, "month_name": "Dec", "count": 7},
+      {"disaster_type": "Wildfire",            "month": 1,  "month_name": "Jan", "count": 9},
+      {"disaster_type": "Wildfire",            "month": 2,  "month_name": "Feb", "count": 4},
+      {"disaster_type": "Wildfire",            "month": 3,  "month_name": "Mar", "count": 1},
+      {"disaster_type": "Wildfire",            "month": 4,  "month_name": "Apr", "count": 0},
+      {"disaster_type": "Wildfire",            "month": 5,  "month_name": "May", "count": 0},
+      {"disaster_type": "Wildfire",            "month": 6,  "month_name": "Jun", "count": 0},
+      {"disaster_type": "Wildfire",            "month": 7,  "month_name": "Jul", "count": 0},
+      {"disaster_type": "Wildfire",            "month": 8,  "month_name": "Aug", "count": 1},
+      {"disaster_type": "Wildfire",            "month": 9,  "month_name": "Sep", "count": 1},
+      {"disaster_type": "Wildfire",            "month": 10, "month_name": "Oct", "count": 4},
+      {"disaster_type": "Wildfire",            "month": 11, "month_name": "Nov", "count": 2},
+      {"disaster_type": "Wildfire",            "month": 12, "month_name": "Dec", "count": 4},
+      {"disaster_type": "Drought",             "month": 1,  "month_name": "Jan", "count": 1},
+      {"disaster_type": "Drought",             "month": 2,  "month_name": "Feb", "count": 0},
+      {"disaster_type": "Drought",             "month": 3,  "month_name": "Mar", "count": 0},
+      {"disaster_type": "Drought",             "month": 4,  "month_name": "Apr", "count": 1},
+      {"disaster_type": "Drought",             "month": 5,  "month_name": "May", "count": 0},
+      {"disaster_type": "Drought",             "month": 6,  "month_name": "Jun", "count": 0},
+      {"disaster_type": "Drought",             "month": 7,  "month_name": "Jul", "count": 0},
+      {"disaster_type": "Drought",             "month": 8,  "month_name": "Aug", "count": 0},
+      {"disaster_type": "Drought",             "month": 9,  "month_name": "Sep", "count": 0},
+      {"disaster_type": "Drought",             "month": 10, "month_name": "Oct", "count": 1},
+      {"disaster_type": "Drought",             "month": 11, "month_name": "Nov", "count": 0},
+      {"disaster_type": "Drought",             "month": 12, "month_name": "Dec", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 1,  "month_name": "Jan", "count": 2},
+      {"disaster_type": "Extreme temperature", "month": 2,  "month_name": "Feb", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 3,  "month_name": "Mar", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 4,  "month_name": "Apr", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 5,  "month_name": "May", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 6,  "month_name": "Jun", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 7,  "month_name": "Jul", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 8,  "month_name": "Aug", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 9,  "month_name": "Sep", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 10, "month_name": "Oct", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 11, "month_name": "Nov", "count": 0},
+      {"disaster_type": "Extreme temperature", "month": 12, "month_name": "Dec", "count": 1}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 3,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "month_name",
+          "type": "ordinal",
+          "title": null,
+          "sort": [
+            "Jan","Feb","Mar","Apr","May","Jun",
+            "Jul","Aug","Sep","Oct","Nov","Dec"
+          ],
+          "axis": {
+            "labelFontSize": 12,
+            "labelFont": "DM Sans",
+            "labelColor": "#3a3a4a",
+            "domainColor": "#e5e7eb",
+            "tickColor": "#e5e7eb"
+          }
+        },
+        "y": {
+          "field": "disaster_type",
+          "type": "ordinal",
+          "title": null,
+          "sort": ["Flood", "Storm", "Wildfire", "Drought", "Extreme temperature"],
+          "axis": {
+            "labelFontSize": 12,
+            "labelFont": "DM Sans",
+            "labelColor": "#3a3a4a",
+            "domainColor": "#e5e7eb",
+            "tickColor": "#e5e7eb"
+          }
+        },
+        "color": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Events",
+          "scale": {
+            "scheme": "blues",
+            "domainMin": 0
+          },
+          "legend": {
+            "title": "Events",
+            "titleFontSize": 11,
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "titleFont": "DM Sans",
+            "orient": "right"
+          }
+        },
+        "tooltip": [
+          {"field": "disaster_type", "type": "nominal",      "title": "Disaster type"},
+          {"field": "month_name",    "type": "nominal",      "title": "Month"},
+          {"field": "count",         "type": "quantitative", "title": "Events"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.count > 0"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "500",
+        "font": "DM Sans"
+      },
+      "encoding": {
+        "x": {
+          "field": "month_name",
+          "type": "ordinal",
+          "sort": [
+            "Jan","Feb","Mar","Apr","May","Jun",
+            "Jul","Aug","Sep","Oct","Nov","Dec"
+          ]
+        },
+        "y": {
+          "field": "disaster_type",
+          "type": "ordinal",
+          "sort": ["Flood", "Storm", "Wildfire", "Drought", "Extreme temperature"]
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative"
+        },
+        "color": {
+          "condition": {"test": "datum.count >= 8", "value": "#ffffff"},
+          "value": "#374151"
+        }
+      }
+    }
+  ],
+  "view": {"stroke": null},
+  "background": "transparent",
+  "config": {
+    "font": "DM Sans",
+    "axis": {"grid": false}
+  }
+}

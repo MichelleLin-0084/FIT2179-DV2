@@ -1,0 +1,205 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth map of Australian natural disaster events by state, 2000-2026",
+  "width": "container",
+  "height": 550,
+  "projection": {
+    "type": "mercator",
+    "center": [
+      134,
+      -28
+    ],
+    "scale": 750
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/ne_1-3.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_10m_admin_1_states_provinces"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.admin == 'Australia'"
+        },
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {
+              "values": [
+                {
+                  "state": "Western Australia",
+                  "event_count": 14
+                },
+                {
+                  "state": "Queensland",
+                  "event_count": 55
+                },
+                {
+                  "state": "New South Wales",
+                  "event_count": 70
+                },
+                {
+                  "state": "Victoria",
+                  "event_count": 33
+                },
+                {
+                  "state": "South Australia",
+                  "event_count": 8
+                },
+                {
+                  "state": "Tasmania",
+                  "event_count": 9
+                },
+                {
+                  "state": "Northern Territory",
+                  "event_count": 6
+                },
+                {
+                  "state": "Australian Capital Territory",
+                  "event_count": 3
+                }
+              ]
+            },
+            "key": "state",
+            "fields": [
+              "event_count"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "color": {
+          "field": "event_count",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "oranges",
+            "domainMin": 0,
+            "domainMax": 75
+          },
+          "legend": {
+            "title": "Disaster events",
+            "titleFontSize": 12,
+            "titleFont": "DM Sans",
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "labelColor": "#F5F0E8",
+            "titleColor": "#F5F0E8",
+            "orient": "bottom-right",
+            "direction": "horizontal",
+            "gradientLength": 160,
+            "gradientThickness": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.name",
+            "type": "nominal",
+            "title": "State / Territory"
+          },
+          {
+            "field": "event_count",
+            "type": "quantitative",
+            "title": "Disaster events"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "label": "NSW\n70",
+            "lon": 146.5,
+            "lat": -32.0,
+            "dark": true
+          },
+          {
+            "label": "QLD\n55",
+            "lon": 144.5,
+            "lat": -22.0,
+            "dark": true
+          },
+          {
+            "label": "VIC\n33",
+            "lon": 144.8,
+            "lat": -37.0,
+            "dark": false
+          },
+          {
+            "label": "WA\n14",
+            "lon": 122.0,
+            "lat": -27.0,
+            "dark": false
+          },
+          {
+            "label": "SA\n8",
+            "lon": 135.5,
+            "lat": -30.0,
+            "dark": false
+          },
+          {
+            "label": "TAS\n9",
+            "lon": 146.8,
+            "lat": -41.5,
+            "dark": false
+          },
+          {
+            "label": "NT\n6",
+            "lon": 133.5,
+            "lat": -19.5,
+            "dark": false
+          },
+          {
+            "label": "ACT\n3",
+            "lon": 149.1,
+            "lat": -35.3,
+            "dark": false
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "DM Sans",
+        "fontWeight": "500",
+        "fontSize": 11,
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.dark",
+            "value": "#ffffff"
+          },
+          "value": "#1a1a2e"
+        }
+      }
+    }
+  ],
+  "view": {
+    "stroke": null
+  },
+  "background": "transparent",
+  "config": {
+    "font": "DM Sans"
+  }
+}

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
-  <!-- Vega-Lite -->
+  <!-- Vega -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -19,53 +19,58 @@
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════════ -->
+  <!-- ═══════════════ HERO ═══════════════ -->
   <header class="hero">
     <div class="hero__noise"></div>
-    <div class="hero__content">
-      <p class="hero__eyebrow">EM-DAT &amp; GDIS · 2000–2026</p>
-      <h1 class="hero__title">Australia<br>Under Threat</h1>
-      <p class="hero__subtitle">A Geography of Natural Disasters</p>
-      <p class="hero__intro">
-        Australia is one of the most disaster-prone nations on Earth. From the flooding plains
-        of Queensland to the wildfire corridors of Victoria, natural hazards reshape communities
-        every year. This visualisation maps where disasters strike, what they cost, and who bears
-        the burden — told through data spanning more than two decades.
-      </p>
-      <div class="hero__legend">
-        <span class="legend-pill" data-type="flood">Flood</span>
-        <span class="legend-pill" data-type="storm">Storm</span>
-        <span class="legend-pill" data-type="wildfire">Wildfire</span>
-        <span class="legend-pill" data-type="drought">Drought</span>
-        <span class="legend-pill" data-type="heat">Extreme temp</span>
-        <span class="legend-pill" data-type="other">Other</span>
+    <div class="hero__inner">
+
+      <!-- LEFT: title + legend -->
+      <div class="hero__left">
+        <p class="hero__eyebrow">EM-DAT &amp; GDIS · 2000–2026</p>
+        <h1 class="hero__title">Australia<br>Under Threat</h1>
+        <p class="hero__subtitle">A Geography of Natural Disasters</p>
+        <div class="hero__legend">
+          <span class="legend-pill" data-type="flood">Flood</span>
+          <span class="legend-pill" data-type="storm">Storm</span>
+          <span class="legend-pill" data-type="wildfire">Wildfire</span>
+          <span class="legend-pill" data-type="drought">Drought</span>
+          <span class="legend-pill" data-type="heat">Extreme temp</span>
+          <span class="legend-pill" data-type="other">Other</span>
+        </div>
       </div>
-    </div>
-    <div class="hero__stats">
-      <div class="stat-card">
-        <span class="stat-card__number">133</span>
-        <span class="stat-card__label">Recorded disasters</span>
+
+      <!-- RIGHT: intro text + stat cards -->
+      <div class="hero__right">
+        <p class="hero__intro">
+          Australia is one of the most disaster-prone nations on Earth. From the flooding plains
+          of Queensland to the wildfire corridors of Victoria, natural hazards reshape communities
+          every year. This visualisation maps where disasters strike, what they cost, and who bears
+          the burden — told through data spanning more than two decades.
+        </p>
+        <div class="hero__stats">
+          <div class="stat-card">
+            <span class="stat-card__number">133</span>
+            <span class="stat-card__label">Recorded disasters</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">481</span>
+            <span class="stat-card__label">Geocoded locations</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">26+</span>
+            <span class="stat-card__label">Years of data</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">6</span>
+            <span class="stat-card__label">Disaster types</span>
+          </div>
+        </div>
       </div>
-      <div class="stat-card">
-        <span class="stat-card__number">481</span>
-        <span class="stat-card__label">Geocoded locations</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-card__number">26+</span>
-        <span class="stat-card__label">Years of data</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-card__number">6</span>
-        <span class="stat-card__label">Disaster types</span>
-      </div>
+
     </div>
   </header>
 
-  <!-- ═══════════════════════════════════════════════
-       SECTION 1 — THE BIG PICTURE
-  ═══════════════════════════════════════════════ -->
+  <!-- ═══════════════ SECTION 1 — BIG PICTURE ═══════════════ -->
   <section class="section section--light" id="big-picture">
     <div class="section__inner">
       <div class="section__header">
@@ -93,17 +98,15 @@
 
       <div class="chart-grid chart-grid--1col">
         <div class="chart-block">
-          <h3 class="chart-title">Disasters per decade by type</h3>
-          <p class="chart-desc">Stacked view across decades reveals how the disaster mix has shifted over time.</p>
+          <h3 class="chart-title">Disasters per year by type</h3>
+          <p class="chart-desc">Stacked view reveals how the disaster mix has shifted over time. Drag the timeline below to zoom in on any period.</p>
           <div id="chart-stacked-decade" class="chart-container chart-container--tall"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       SECTION 2 — WHERE DISASTERS STRIKE
-  ═══════════════════════════════════════════════ -->
+  <!-- ═══════════════ SECTION 2 — GEOGRAPHY ═══════════════ -->
   <section class="section section--dark" id="geography">
     <div class="section__inner">
       <div class="section__header">
@@ -119,7 +122,7 @@
       <div class="chart-grid chart-grid--1col">
         <div class="chart-block chart-block--dark">
           <h3 class="chart-title chart-title--light">Disaster events by state</h3>
-          <p class="chart-desc chart-desc--light">Choropleth map showing total disaster events recorded per state and territory.</p>
+          <p class="chart-desc chart-desc--light">Choropleth map showing total disaster events recorded per state and territory. Hover over a state for details.</p>
           <div id="chart-choropleth" class="chart-container chart-container--map"></div>
         </div>
       </div>
@@ -127,17 +130,14 @@
       <div class="chart-grid chart-grid--1col">
         <div class="chart-block chart-block--dark">
           <h3 class="chart-title chart-title--light">Geocoded disaster locations (1968–2018)</h3>
-          <p class="chart-desc chart-desc--light">Each dot marks a location affected by a recorded disaster. Colour indicates disaster type. Use the filter below to explore by category.</p>
+          <p class="chart-desc chart-desc--light">Each dot marks a location affected by a recorded disaster. Colour indicates disaster type. Use the dropdown to filter by category.</p>
           <div id="chart-point-map" class="chart-container chart-container--map"></div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       SECTION 3 — DISASTER TYPES IN DEPTH
-  ═══════════════════════════════════════════════ -->
+  <!-- ═══════════════ SECTION 3 — PATTERNS ═══════════════ -->
   <section class="section section--light" id="depth">
     <div class="section__inner">
       <div class="section__header">
@@ -153,7 +153,7 @@
       <div class="chart-grid chart-grid--1col">
         <div class="chart-block">
           <h3 class="chart-title">Disaster frequency by month and type</h3>
-          <p class="chart-desc">A heatmap revealing the seasonal concentration of each disaster type. Darker cells = more events in that month.</p>
+          <p class="chart-desc">A heatmap revealing the seasonal concentration of each disaster type. Darker cells indicate more events in that month.</p>
           <div id="chart-heatmap" class="chart-container chart-container--tall"></div>
         </div>
       </div>
@@ -173,9 +173,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       SECTION 4 — THE HUMAN COST
-  ═══════════════════════════════════════════════ -->
+  <!-- ═══════════════ SECTION 4 — HUMAN COST ═══════════════ -->
   <section class="section section--dark" id="cost">
     <div class="section__inner">
       <div class="section__header">
@@ -189,9 +187,9 @@
       </div>
 
       <div class="chart-grid chart-grid--1col">
-        <div class="chart-block chart-block--dark">
+        <div class="chart-block chart-block--dark chart-block--constrained">
           <h3 class="chart-title chart-title--light">Economic damage by disaster type (inflation-adjusted)</h3>
-          <p class="chart-desc chart-desc--light">Total damage in thousands of USD, adjusted for inflation. Missing values reflect unreported damage figures in EM-DAT.</p>
+          <p class="chart-desc chart-desc--light">Bubble size = total damage in billion USD. Drag the timeline below to zoom into any period. Click legend to highlight a type.</p>
           <div id="chart-damage" class="chart-container chart-container--tall"></div>
         </div>
       </div>
@@ -208,13 +206,10 @@
           <div id="chart-deadliest" class="chart-container"></div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════ -->
+  <!-- ═══════════════ FOOTER ═══════════════ -->
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__col">
@@ -229,14 +224,16 @@
       <div class="footer__col">
         <p class="footer__heading">About</p>
         <p class="footer__text">
-          Created for FIT2179 Data Visualisation 2, Monash University, Semester 1 2026.
+          Created for FIT2179 Data Visualisation 2, Monash University, Semester 1 2026.<br><br>
+          Designed for the average Australian reader. AI tools were used to assist with
+          grammar checking and code review. All visualisations and analysis are the author's own work.
         </p>
       </div>
       <div class="footer__col">
         <p class="footer__heading">Author</p>
         <p class="footer__text">
           <!-- Replace with your name -->
-          Michelle Lin - 36453110<br>
+          Student Name<br>
           Monash University<br>
           May 2026
         </p>

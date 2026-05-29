@@ -1,0 +1,568 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Disaster events per year with dual-handle brush range selector",
+  "vconcat": [
+    {
+      "height": 300,
+      "transform": [
+        {
+          "filter": {
+            "param": "year_brush",
+            "empty": true
+          }
+        }
+      ],
+      "params": [
+        {
+          "name": "type_highlight",
+          "select": {
+            "type": "point",
+            "fields": [
+              "disaster_type"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopLeft": 3,
+        "cornerRadiusTopRight": 3,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelAngle": -45,
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "gridColor": "#e5e7eb",
+            "domainColor": "#e5e7eb"
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "count",
+          "type": "quantitative",
+          "title": "Number of events",
+          "axis": {
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "titleFontSize": 12,
+            "titleFont": "DM Sans",
+            "titleColor": "#6b7280",
+            "gridColor": "#e5e7eb",
+            "domainColor": "#e5e7eb"
+          }
+        },
+        "color": {
+          "field": "disaster_type",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Flood",
+              "Storm",
+              "Wildfire",
+              "Drought",
+              "Extreme temperature",
+              "Infestation",
+              "Epidemic"
+            ],
+            "range": [
+              "#0072B2",
+              "#56B4E9",
+              "#E69F00",
+              "#F0E442",
+              "#CC79A7",
+              "#009E73",
+              "#888780"
+            ]
+          },
+          "legend": {
+            "title": "Click to highlight",
+            "titleFontSize": 10,
+            "titleColor": "#6b7280",
+            "orient": "top",
+            "direction": "horizontal",
+            "labelFontSize": 11,
+            "labelFont": "DM Sans",
+            "symbolSize": 120,
+            "symbolType": "square",
+            "labelColor": "#3a3a4a",
+            "padding": 4,
+            "columnPadding": 10
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "type_highlight",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.15
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "disaster_type",
+            "type": "nominal",
+            "title": "Type"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Events"
+          }
+        ]
+      }
+    },
+    {
+      "height": 60,
+      "view": {
+        "fill": "#e8e4dc",
+        "stroke": "#b8b0a0",
+        "strokeWidth": 1
+      },
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopLeft": 2,
+        "cornerRadiusTopRight": 2
+      },
+      "params": [
+        {
+          "name": "year_brush",
+          "select": {
+            "type": "interval",
+            "encodings": [
+              "x"
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "labelAngle": -45,
+            "labelFontSize": 9,
+            "labelFont": "DM Sans",
+            "labelColor": "#6b7280",
+            "domainColor": "#b8b0a0",
+            "tickColor": "transparent",
+            "title": "Drag to select a year range \u00b7 scroll to resize",
+            "titleColor": "#6b7280",
+            "titleFontSize": 11,
+            "titleFont": "DM Sans",
+            "titlePadding": 8
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "count",
+          "type": "quantitative",
+          "axis": null
+        },
+        "color": {
+          "field": "disaster_type",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Flood",
+              "Storm",
+              "Wildfire",
+              "Drought",
+              "Extreme temperature",
+              "Infestation",
+              "Epidemic"
+            ],
+            "range": [
+              "#0072B2",
+              "#56B4E9",
+              "#E69F00",
+              "#F0E442",
+              "#CC79A7",
+              "#009E73",
+              "#888780"
+            ]
+          },
+          "legend": null
+        }
+      }
+    }
+  ],
+  "data": {
+    "values": [
+      {
+        "year": 2000,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2000,
+        "disaster_type": "Storm",
+        "count": 3
+      },
+      {
+        "year": 2000,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2000,
+        "disaster_type": "Infestation",
+        "count": 1
+      },
+      {
+        "year": 2001,
+        "disaster_type": "Flood",
+        "count": 4
+      },
+      {
+        "year": 2001,
+        "disaster_type": "Storm",
+        "count": 3
+      },
+      {
+        "year": 2001,
+        "disaster_type": "Wildfire",
+        "count": 2
+      },
+      {
+        "year": 2002,
+        "disaster_type": "Drought",
+        "count": 1
+      },
+      {
+        "year": 2002,
+        "disaster_type": "Storm",
+        "count": 3
+      },
+      {
+        "year": 2002,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2003,
+        "disaster_type": "Flood",
+        "count": 4
+      },
+      {
+        "year": 2003,
+        "disaster_type": "Storm",
+        "count": 5
+      },
+      {
+        "year": 2003,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2004,
+        "disaster_type": "Flood",
+        "count": 3
+      },
+      {
+        "year": 2004,
+        "disaster_type": "Storm",
+        "count": 3
+      },
+      {
+        "year": 2004,
+        "disaster_type": "Infestation",
+        "count": 1
+      },
+      {
+        "year": 2005,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2005,
+        "disaster_type": "Storm",
+        "count": 2
+      },
+      {
+        "year": 2005,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2006,
+        "disaster_type": "Drought",
+        "count": 1
+      },
+      {
+        "year": 2006,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2006,
+        "disaster_type": "Storm",
+        "count": 3
+      },
+      {
+        "year": 2006,
+        "disaster_type": "Wildfire",
+        "count": 3
+      },
+      {
+        "year": 2007,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2007,
+        "disaster_type": "Storm",
+        "count": 1
+      },
+      {
+        "year": 2008,
+        "disaster_type": "Flood",
+        "count": 4
+      },
+      {
+        "year": 2008,
+        "disaster_type": "Storm",
+        "count": 1
+      },
+      {
+        "year": 2009,
+        "disaster_type": "Extreme temperature",
+        "count": 1
+      },
+      {
+        "year": 2009,
+        "disaster_type": "Flood",
+        "count": 2
+      },
+      {
+        "year": 2009,
+        "disaster_type": "Storm",
+        "count": 2
+      },
+      {
+        "year": 2009,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2010,
+        "disaster_type": "Flood",
+        "count": 5
+      },
+      {
+        "year": 2010,
+        "disaster_type": "Storm",
+        "count": 3
+      },
+      {
+        "year": 2011,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2011,
+        "disaster_type": "Storm",
+        "count": 1
+      },
+      {
+        "year": 2011,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2012,
+        "disaster_type": "Flood",
+        "count": 2
+      },
+      {
+        "year": 2013,
+        "disaster_type": "Storm",
+        "count": 1
+      },
+      {
+        "year": 2013,
+        "disaster_type": "Wildfire",
+        "count": 2
+      },
+      {
+        "year": 2014,
+        "disaster_type": "Extreme temperature",
+        "count": 1
+      },
+      {
+        "year": 2014,
+        "disaster_type": "Storm",
+        "count": 1
+      },
+      {
+        "year": 2014,
+        "disaster_type": "Wildfire",
+        "count": 2
+      },
+      {
+        "year": 2015,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2015,
+        "disaster_type": "Storm",
+        "count": 4
+      },
+      {
+        "year": 2015,
+        "disaster_type": "Wildfire",
+        "count": 3
+      },
+      {
+        "year": 2016,
+        "disaster_type": "Epidemic",
+        "count": 1
+      },
+      {
+        "year": 2016,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2016,
+        "disaster_type": "Storm",
+        "count": 1
+      },
+      {
+        "year": 2016,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2017,
+        "disaster_type": "Storm",
+        "count": 2
+      },
+      {
+        "year": 2017,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2018,
+        "disaster_type": "Drought",
+        "count": 1
+      },
+      {
+        "year": 2018,
+        "disaster_type": "Extreme temperature",
+        "count": 1
+      },
+      {
+        "year": 2018,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2019,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2019,
+        "disaster_type": "Wildfire",
+        "count": 2
+      },
+      {
+        "year": 2020,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2020,
+        "disaster_type": "Storm",
+        "count": 2
+      },
+      {
+        "year": 2021,
+        "disaster_type": "Flood",
+        "count": 4
+      },
+      {
+        "year": 2021,
+        "disaster_type": "Storm",
+        "count": 2
+      },
+      {
+        "year": 2021,
+        "disaster_type": "Wildfire",
+        "count": 1
+      },
+      {
+        "year": 2022,
+        "disaster_type": "Flood",
+        "count": 5
+      },
+      {
+        "year": 2023,
+        "disaster_type": "Flood",
+        "count": 4
+      },
+      {
+        "year": 2023,
+        "disaster_type": "Storm",
+        "count": 2
+      },
+      {
+        "year": 2024,
+        "disaster_type": "Flood",
+        "count": 2
+      },
+      {
+        "year": 2024,
+        "disaster_type": "Storm",
+        "count": 1
+      },
+      {
+        "year": 2025,
+        "disaster_type": "Storm",
+        "count": 2
+      },
+      {
+        "year": 2025,
+        "disaster_type": "Wildfire",
+        "count": 2
+      },
+      {
+        "year": 2026,
+        "disaster_type": "Flood",
+        "count": 1
+      },
+      {
+        "year": 2026,
+        "disaster_type": "Wildfire",
+        "count": 1
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "spacing": 5,
+  "background": "transparent",
+  "config": {
+    "font": "DM Sans",
+    "concat": {
+      "spacing": 5
+    }
+  }
+}
