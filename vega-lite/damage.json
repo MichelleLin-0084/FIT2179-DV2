@@ -1,8 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Economic damage bubble matrix with year range selector",
-  "width": "container",
-  "height": 320,
   "background": "transparent",
   "data": {
     "values": [
@@ -278,100 +276,196 @@
       }
     ]
   },
-  "params": [
+  "vconcat": [
     {
-      "name": "year_min",
-      "value": 2000,
-      "bind": {
-        "input": "range",
-        "min": 2000,
-        "max": 2024,
-        "step": 1,
-        "name": "From year: "
-      }
+      "height": 320,
+      "transform": [
+        {
+          "filter": {
+            "param": "year_brush",
+            "empty": true
+          }
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "filled": true,
+            "stroke": "#ffffff",
+            "strokeWidth": 0.8,
+            "tooltip": true
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "ordinal",
+              "title": null,
+              "axis": {
+                "labelAngle": -45,
+                "labelFontSize": 11,
+                "labelFont": "DM Sans",
+                "gridColor": "rgba(255,255,255,0.08)",
+                "domainColor": "transparent",
+                "labelColor": "#aab0c0"
+              }
+            },
+            "y": {
+              "field": "disaster_type",
+              "type": "nominal",
+              "title": null,
+              "sort": [
+                "Flood",
+                "Storm",
+                "Wildfire",
+                "Drought",
+                "Infestation"
+              ],
+              "axis": {
+                "labelFontSize": 13,
+                "labelFont": "DM Sans",
+                "labelColor": "#F5F0E8",
+                "domainColor": "transparent",
+                "tickColor": "transparent"
+              }
+            },
+            "size": {
+              "field": "damage",
+              "type": "quantitative",
+              "title": "Damage (billion USD)",
+              "scale": {
+                "range": [
+                  30,
+                  2500
+                ]
+              },
+              "legend": {
+                "title": "Damage (billion USD)",
+                "titleFontSize": 10,
+                "titleColor": "#aab0c0",
+                "labelFontSize": 10,
+                "labelFont": "DM Sans",
+                "labelColor": "#F5F0E8",
+                "orient": "right",
+                "direction": "vertical",
+                "symbolFillColor": "#56B4E9",
+                "symbolStrokeColor": "#ffffff",
+                "symbolStrokeWidth": 0.5
+              }
+            },
+            "color": {
+              "field": "disaster_type",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Flood",
+                  "Storm",
+                  "Wildfire",
+                  "Drought",
+                  "Infestation"
+                ],
+                "range": [
+                  "#0072B2",
+                  "#56B4E9",
+                  "#E69F00",
+                  "#F0E442",
+                  "#009E73"
+                ]
+              },
+              "legend": {
+                "titleFontSize": 10,
+                "titleColor": "#aab0c0",
+                "orient": "bottom",
+                "direction": "horizontal",
+                "labelFontSize": 11,
+                "labelFont": "DM Sans",
+                "labelColor": "#F5F0E8",
+                "symbolSize": 150,
+                "padding": 6,
+                "columnPadding": 10
+              }
+            },
+            "tooltip": [
+              {
+                "field": "year",
+                "type": "ordinal",
+                "title": "Year"
+              },
+              {
+                "field": "disaster_type",
+                "type": "nominal",
+                "title": "Disaster type"
+              },
+              {
+                "field": "damage",
+                "type": "quantitative",
+                "title": "Damage (billion USD)",
+                "format": ".2f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "rgba(255,255,255,0.12)",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "ordinal"
+            }
+          }
+        }
+      ]
     },
     {
-      "name": "year_max",
-      "value": 2025,
-      "bind": {
-        "input": "range",
-        "min": 2001,
-        "max": 2025,
-        "step": 1,
-        "name": "To year: "
-      }
-    }
-  ],
-  "transform": [
-    {
-      "filter": "datum.year >= year_min && datum.year <= year_max"
-    }
-  ],
-  "layer": [
-    {
+      "height": 60,
+      "view": {
+        "fill": "#1a2535",
+        "stroke": "#2e3f55",
+        "strokeWidth": 1
+      },
+      "params": [
+        {
+          "name": "year_brush",
+          "select": {
+            "type": "interval",
+            "encodings": [
+              "x"
+            ]
+          }
+        }
+      ],
       "mark": {
-        "type": "circle",
-        "filled": true,
-        "stroke": "#ffffff",
-        "strokeWidth": 0.8,
-        "tooltip": true
+        "type": "bar",
+        "cornerRadiusTopLeft": 2,
+        "cornerRadiusTopRight": 2
       },
       "encoding": {
         "x": {
           "field": "year",
           "type": "ordinal",
-          "title": null,
           "axis": {
             "labelAngle": -45,
-            "labelFontSize": 11,
+            "labelFontSize": 9,
             "labelFont": "DM Sans",
-            "gridColor": "rgba(255,255,255,0.08)",
-            "domainColor": "transparent",
-            "labelColor": "#aab0c0"
+            "labelColor": "#aab0c0",
+            "domainColor": "#2e3f55",
+            "tickColor": "transparent",
+            "title": "Drag to select a year range \u00b7 scroll to resize",
+            "titleColor": "#6b7280",
+            "titleFontSize": 11,
+            "titleFont": "DM Sans",
+            "titlePadding": 8
           }
         },
         "y": {
-          "field": "disaster_type",
-          "type": "nominal",
-          "title": null,
-          "sort": [
-            "Flood",
-            "Storm",
-            "Wildfire",
-            "Drought",
-            "Infestation"
-          ],
-          "axis": {
-            "labelFontSize": 13,
-            "labelFont": "DM Sans",
-            "labelColor": "#F5F0E8",
-            "domainColor": "transparent",
-            "tickColor": "transparent"
-          }
-        },
-        "size": {
           "field": "damage",
           "type": "quantitative",
-          "title": "Damage (billion USD)",
-          "scale": {
-            "range": [
-              30,
-              2500
-            ]
-          },
-          "legend": {
-            "title": "Damage (billion USD)",
-            "titleFontSize": 10,
-            "titleColor": "#aab0c0",
-            "labelFontSize": 10,
-            "labelFont": "DM Sans",
-            "labelColor": "#F5F0E8",
-            "orient": "right",
-            "direction": "vertical",
-            "symbolFillColor": "#56B4E9",
-            "symbolStrokeColor": "#ffffff",
-            "symbolStrokeWidth": 0.5
-          }
+          "aggregate": "sum",
+          "axis": null
         },
         "color": {
           "field": "disaster_type",
@@ -392,57 +486,21 @@
               "#009E73"
             ]
           },
-          "legend": {
-            "titleFontSize": 10,
-            "titleColor": "#aab0c0",
-            "orient": "bottom",
-            "direction": "horizontal",
-            "labelFontSize": 11,
-            "labelFont": "DM Sans",
-            "labelColor": "#F5F0E8",
-            "symbolSize": 150,
-            "padding": 6,
-            "columnPadding": 10
-          }
-        },
-        "tooltip": [
-          {
-            "field": "year",
-            "type": "ordinal",
-            "title": "Year"
-          },
-          {
-            "field": "disaster_type",
-            "type": "nominal",
-            "title": "Disaster type"
-          },
-          {
-            "field": "damage",
-            "type": "quantitative",
-            "title": "Damage (billion USD)",
-            "format": ".2f"
-          }
-        ]
-      }
-    },
-    {
-      "mark": {
-        "type": "rule",
-        "color": "rgba(255,255,255,0.12)",
-        "strokeWidth": 1
-      },
-      "encoding": {
-        "x": {
-          "field": "year",
-          "type": "ordinal"
+          "legend": null
         }
       }
     }
   ],
-  "view": {
-    "stroke": null
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
   },
+  "spacing": 5,
   "config": {
-    "font": "DM Sans"
+    "font": "DM Sans",
+    "concat": {
+      "spacing": 5
+    }
   }
 }
