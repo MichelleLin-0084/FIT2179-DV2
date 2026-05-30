@@ -1,0 +1,287 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Strip plot of people affected per disaster event",
+  "width": "container",
+  "height": 280,
+  "data": {
+    "values": [
+      {
+        "disaster_type": "Flood",
+        "year": 2010,
+        "total_affected": 175000,
+        "label": "2010 QLD floods"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2022,
+        "total_affected": 102000,
+        "label": "2022 QLD/NSW floods"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2022,
+        "total_affected": 85000,
+        "label": "2022 floods"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2022,
+        "total_affected": 54000,
+        "label": "2022 floods"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2014,
+        "total_affected": 52539,
+        "label": "2014 storm"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2025,
+        "total_affected": 50000,
+        "label": "2025 storm"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2017,
+        "total_affected": 45000,
+        "label": "TC Debbie"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2021,
+        "total_affected": 18000,
+        "label": "2021 flood"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2009,
+        "total_affected": 15000,
+        "label": "2009 storm"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2012,
+        "total_affected": 13000,
+        "label": "2012 flood"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2008,
+        "total_affected": 12000,
+        "label": "2008 storm"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2010,
+        "total_affected": 10000,
+        "label": "2010 flood"
+      },
+      {
+        "disaster_type": "Wildfire",
+        "year": 2009,
+        "total_affected": 9954,
+        "label": "Black Saturday"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2019,
+        "total_affected": 9900,
+        "label": "2019 flood"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2009,
+        "total_affected": 9000,
+        "label": "2009 flood"
+      },
+      {
+        "disaster_type": "Wildfire",
+        "year": 2019,
+        "total_affected": 8883,
+        "label": "Currowan fire"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2013,
+        "total_affected": 7500,
+        "label": "Ex-TC Oswald"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2011,
+        "total_affected": 7300,
+        "label": "TC Yasi"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2006,
+        "total_affected": 7030,
+        "label": "TC Larry"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2022,
+        "total_affected": 6012,
+        "label": "2022 flood"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2021,
+        "total_affected": 5500,
+        "label": "2021 flood"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2020,
+        "total_affected": 4300,
+        "label": "2020 storm"
+      },
+      {
+        "disaster_type": "Wildfire",
+        "year": 2006,
+        "total_affected": 3000,
+        "label": "2006 wildfire"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2015,
+        "total_affected": 2500,
+        "label": "2015 flood"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2015,
+        "total_affected": 2000,
+        "label": "2015 storm"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2023,
+        "total_affected": 1800,
+        "label": "2023 flood"
+      },
+      {
+        "disaster_type": "Drought",
+        "year": 2002,
+        "total_affected": 1500,
+        "label": "2002 drought"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2003,
+        "total_affected": 1200,
+        "label": "2003 storm"
+      },
+      {
+        "disaster_type": "Flood",
+        "year": 2008,
+        "total_affected": 1100,
+        "label": "2008 flood"
+      },
+      {
+        "disaster_type": "Storm",
+        "year": 2004,
+        "total_affected": 900,
+        "label": "2004 storm"
+      }
+    ]
+  },
+  "mark": {
+    "type": "circle",
+    "filled": true,
+    "opacity": 0.8,
+    "stroke": "#ffffff",
+    "strokeWidth": 0.5,
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "disaster_type",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Flood",
+        "Storm",
+        "Wildfire",
+        "Drought",
+        "Extreme temperature"
+      ],
+      "axis": {
+        "labelFontSize": 12,
+        "labelFont": "DM Sans",
+        "labelColor": "#3a3a4a",
+        "domainColor": "#e5e7eb",
+        "tickColor": "#e5e7eb",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "total_affected",
+      "type": "quantitative",
+      "title": "People affected",
+      "axis": {
+        "labelFontSize": 11,
+        "labelFont": "DM Sans",
+        "titleFontSize": 12,
+        "titleFont": "DM Sans",
+        "titleColor": "#6b7280",
+        "gridColor": "#e5e7eb",
+        "domainColor": "#e5e7eb"
+      }
+    },
+    "color": {
+      "field": "disaster_type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Flood",
+          "Storm",
+          "Wildfire",
+          "Drought",
+          "Extreme temperature"
+        ],
+        "range": [
+          "#0072B2",
+          "#56B4E9",
+          "#E69F00",
+          "#F0E442",
+          "#CC79A7"
+        ]
+      },
+      "legend": null
+    },
+    "size": {
+      "value": 80
+    },
+    "tooltip": [
+      {
+        "field": "label",
+        "type": "nominal",
+        "title": "Event"
+      },
+      {
+        "field": "disaster_type",
+        "type": "nominal",
+        "title": "Type"
+      },
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year"
+      },
+      {
+        "field": "total_affected",
+        "type": "quantitative",
+        "title": "People affected"
+      }
+    ]
+  },
+  "view": {
+    "stroke": null
+  },
+  "background": "transparent",
+  "config": {
+    "font": "DM Sans"
+  }
+}
