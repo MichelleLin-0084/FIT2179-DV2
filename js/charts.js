@@ -7,7 +7,8 @@
 const PIXEL_WIDTH_CHARTS = new Set([
   'chart-choropleth',
   'chart-point-map',
-  'chart-stacked-decade'
+  'chart-stacked-decade',
+  'chart-damage'
 ]);
 
 /* ── Recursively patch width on every child view in a vconcat/hconcat spec.
