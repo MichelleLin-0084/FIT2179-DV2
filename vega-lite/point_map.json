@@ -14,7 +14,7 @@
       "value": "All",
       "bind": {
         "input": "select",
-        "options": ["All", "flood", "storm", "drought", "extreme temperature", "earthquake", "landslide"],
+        "options": ["All", "flood", "storm", "drought", "extreme temperature ", "earthquake", "landslide"],
         "labels": ["All types", "Flood", "Storm", "Drought", "Extreme Temperature", "Earthquake", "Landslide"],
         "name": "Filter by type:  "
       }
@@ -57,7 +57,7 @@
           "field": "disastertype",
           "type": "nominal",
           "scale": {
-            "domain": ["flood", "storm", "drought", "extreme temperature", "earthquake", "landslide"],
+            "domain": ["flood", "storm", "drought", "extreme temperature ", "earthquake", "landslide"],
             "range":  ["#0072B2", "#56B4E9", "#F0E442", "#CC79A7", "#009E73", "#E69F00"]
           },
           "legend": {
