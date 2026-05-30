@@ -83,20 +83,6 @@
           {"aggregate": "sum", "field": "deaths", "type": "quantitative", "title": "Deaths"}
         ]
       }
-    },
-    {
-      "data": {
-        "values": [
-          {"year": 2009, "deaths": 527, "label": "2009 heatwave\n& Black Saturday\n527 deaths"},
-          {"year": 2014, "deaths": 139, "label": "2014\nheatwave\n139 deaths"}
-        ]
-      },
-      "mark": {"type": "text", "fontSize": 9, "fontStyle": "italic", "font": "DM Sans", "dx": 5, "align": "left", "color": "#6b7280"},
-      "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "deaths", "type": "quantitative"},
-        "text": {"field": "label", "type": "nominal"}
-      }
     }
   ],
   "view": {"stroke": null},
